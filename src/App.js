@@ -17,7 +17,8 @@ class App extends Component {
       <div>
         
 
-
+        <Navbar/>
+        <h1>HEllO</h1>
 
 
         <Movies/>
@@ -25,8 +26,7 @@ class App extends Component {
 
 
        
-        <Navbar/>
-        <h1>HEllO</h1>
+        
         <Suhaib/>
       </div>
       
