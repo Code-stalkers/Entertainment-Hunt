@@ -1,10 +1,28 @@
 import React, { Component } from 'react';
+import Movies from './HarounComponents/Movies';
+import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
+
+
+
 
 class App extends Component {
+
+
+
+
   render() {
     return (
       <div>
-        <h1>HEllO</h1>
+        
+
+
+
+
+        <Movies/>
+     
+
+
+       
       </div>
     );
   }
