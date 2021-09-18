@@ -4,9 +4,8 @@ import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 
 
 
-
 import Suhaib from './suhaibComponents/suhaibMain'
-import Navbar from './suhaibComponents/NavBar';
+import Navbar from './YousefComponents/NavBar';
 class App extends Component {
 
 
@@ -15,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        
         
 
         <Navbar/>
@@ -26,6 +26,7 @@ class App extends Component {
 
 
        
+        
         
         <Suhaib/>
       </div>

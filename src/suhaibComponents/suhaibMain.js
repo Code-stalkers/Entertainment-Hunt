@@ -6,7 +6,8 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import GameItem from './gameItem'
-import Update from './components/suhaibModal';
+// import Update from './components/suhaibModal';
+import { withAuth0 } from "@auth0/auth0-react";
 
 
 class Suhaib extends Component {
@@ -38,10 +39,33 @@ class Suhaib extends Component {
   //   }
   // }
 
-  componentDidMount = () => {
+  // componentDidMount = () => {
+  //   const { user } = this.props.auth0;
+  //   let email = user.email;
+  //   axios.get(`http://localhost:3001/game?title=${Title}&email=${email}`)
+  //     .then(result => {
+  //       this.setState({
+  //         favGamesArr: result.data
+  //       })
+  //     })
+  //     .catch(err => {
+  //       console.log('error');
+  //     })
+  // }
+
+
+  addGameHandler = (event) => {
+    event.preventDefault();
     const { user } = this.props.auth0;
     let email = user.email;
-    axios.get(`http://localhost:3001/game?title=${Title}&email=${email}`)
+    const obj = {
+      title:this.Title,
+      email:email
+      
+      
+
+    }
+    axios.post(`http://localhost:3001/addGame`, obj)
       .then(result => {
         this.setState({
           favGamesArr: result.data
@@ -50,7 +74,23 @@ class Suhaib extends Component {
       .catch(err => {
         console.log('error');
       })
+
+
   }
+
+  // deleteGame = (id) => {
+  //   const { user } = this.props.auth0;
+  //   let email = user.email;
+  //   axios.delete(`https://books-suhaib-backend.herokuapp.com/deleteBooks/${id}?email=${email}`)
+  //     .then(result => {
+  //       this.setState({
+  //         favBooksArr: result.data
+  //       })
+  //     })
+  //     .catch(err => {
+  //       console.log('erorr')
+  //     })
+  // }
 
 
   getGameData = async (event) => {
@@ -72,61 +112,63 @@ class Suhaib extends Component {
 
   }
 
-  handleClose = () => {
-    this.setState({
-      showFlag: false
-    })
-  }
+  // handleClose = () => {
+  //   this.setState({
+  //     showFlag: false
+  //   })
+  // }
 
-  showModalUpdate = (item) => {
-    this.setState({
+  // showModalUpdate = (item) => {
+  //   this.setState({
       
-      showFlag: true,
-      Title: item.Title,
-      Poster: item.Poster,
-      Type: item.Type,
-      Year: item.Year,
-      id: item._id
-    })
-  }
+  //     showFlag: true,
+  //     Title: item.Title,
+  //     Poster: item.Poster,
+  //     Type: item.Type,
+  //     Year: item.Year,
+  //     id: item._id
+  //   })
+  // }
 
-  updateBook=(event)=>{
-    event.preventDefault();
-    const { user } = this.props.auth0;
-    let email = user.email;
-    const obj={
-      Title: event.target.movieName.value,
-      id:this.state.id
-    }
-    axios
-    .put(`http://localhost:3001/updateGame/${this.state.id}`,obj)
-    .then(result=>{
-      this.setState({
-        favGamesArr: result.data,
-        showFlag: false
-      })
-    })
-    .catch(err=>{
-      console.log('erorr')
-    })
-  }
+  // updateBook=(event)=>{
+  //   event.preventDefault();
+  //   const { user } = this.props.auth0;
+  //   let email = user.email;
+  //   const obj={
+  //     Title: event.target.movieName.value,
+  //     id:this.state.id
+  //   }
+  //   axios
+  //   .put(`http://localhost:3001/updateGame/${this.state.id}`,obj)
+  //   .then(result=>{
+  //     this.setState({
+  //       favGamesArr: result.data,
+  //       showFlag: false
+  //     })
+  //   })
+  //   .catch(err=>{
+  //     console.log('erorr')
+  //   })
+  // }
 
   render() {
     return (
       <>
       
-      <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}>
+      <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}
+      >
           <fieldset>
 
 
             <input type='text' name='movieName' placeholder='Enter movie name' />
             <br />
             <Button style={{ marginTop: 20 }} type='submit'>Explore!</Button>
+            <Button style={{ marginTop: 20 }} type='button' >add!</Button>
 
           </fieldset>
         </Form>
 
-        {this.state.favGamesArr.map(item => {
+        {/* {this.state.favGamesArr.map(item => {
           return (
 
             <div >
@@ -137,7 +179,7 @@ class Suhaib extends Component {
                 showModalUpdate={this.showModalUpdate}
               />
 
-            </div>
+            </div> */}
 
       <Row className="justify-content-between" >
             
@@ -154,4 +196,4 @@ class Suhaib extends Component {
   }
 }
 
-export default Suhaib;
+export default withAuth0(Suhaib);
