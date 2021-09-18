@@ -14,18 +14,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div >
+        {/* style={{backgroundColor: '#000000'}} */}
         
 
 
-
+        <Navbar/>
 
         <Movies/>
      
-
-
-       
-        <Navbar/>
         <h1>HEllO</h1>
         <Suhaib/>
       </div>
