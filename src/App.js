@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Movies from './HarounComponents/Movies';
+
 import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 
 
@@ -12,14 +13,16 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+
+
 class App extends Component {
-
-
-
-
   render() {
     return (
+
       <div>
+        
+        
+
 
          <Navbar/>
           <Router>
@@ -31,11 +34,28 @@ class App extends Component {
           </Switch>
         </Router>
 
-      </div>
+     
+      
+
+
+        <h1>HEllO</h1>
+
+        
       
 
 
 
+  
+       
+
+        
+        
+     
+     
+      
+
+    
+        </div>
     );
   }
 }
