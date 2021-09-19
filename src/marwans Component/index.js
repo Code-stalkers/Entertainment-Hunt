@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-
 import "bootstrap/dist/css/bootstrap.css";
-
-
 import CommentList from "./components/CommentList";
 import CommentForm from "./components/CommentForm";
 
@@ -48,7 +45,7 @@ class App extends Component {
   }
 
   render() {
-    const loadingSpin = this.state.loading ? "App-logo Spin" : "App-logo";
+
     return (
       <div className="App container bg-light shadow">
         <header className="App-header">
@@ -59,12 +56,6 @@ class App extends Component {
               💬
             </span>
           </h1>
-          <p>
-            Checkout the tutorial on{" "}
-            <a className="text-light" href="https://qcode.in">
-              QCode.in
-            </a>
-          </p>
         </header>
 
         <div className="row">
