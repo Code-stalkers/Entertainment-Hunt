@@ -13,20 +13,20 @@ class Movies extends Component {
   constructor(props) {
     super(props);
     this.state={
-      disabled :false,
-      active :false,
+      // disabled :false,
+      // active :false,
      
     
     } ;
   }
 
 
-  disabledButton= () => {
-    this.setState({
-      disabled :true,
-      active :false,
-    })
-  }
+  // disabledButton= () => {
+  //   this.setState({
+  //     disabled :true,
+  //     active :false,
+  //   })
+  // }
 
 
 
