@@ -17,15 +17,15 @@ class Suhaib extends Component {
     this.state = {
       favGamesArr: [],
       showFlag: false,
-      gameData:[],
-      Title:'',
-      Poster:'',
-      Type:'',
-      Year:''
+      gameData: [],
+      Title: '',
+      Poster: '',
+      Type: '',
+      Year: ''
 
 
     }
-    
+
   }
   // constructor(props) {
   //   super(props);
@@ -73,27 +73,28 @@ class Suhaib extends Component {
 
   getGameData = async (event) => {
     event.preventDefault()
-    
+
     let Title = event.target.movieName.value;
 
     const url = `http://localhost:3001/game?title=${Title}`;
+
+    let collectedData = axios
     
-    let collectedData=axios
       .get(url)
       .then(result => {
         console.log(result);
         this.setState({
           gameData: result.data
         })
-        
+
       })
       .catch(err => console.log(err))
-      
-      if(this.gameData!==null){
-        console.log(this.gameData);
-      }else{
-        console.log('hi')
-      }
+
+    if (this.gameData !== null) {
+      console.log(this.gameData);
+    } else {
+      console.log('hi')
+    }
 
   }
 
@@ -105,7 +106,7 @@ class Suhaib extends Component {
 
   // showModalUpdate = (item) => {
   //   this.setState({
-      
+
   //     showFlag: true,
   //     Title: item.Title,
   //     Poster: item.Poster,
@@ -135,60 +136,60 @@ class Suhaib extends Component {
   //     console.log('erorr')
   //   })
   // }
-  
 
-  addGameHandler = (Title,Poster,Type,Year,email) => {
-    
-    if(this.gameData !== null || this.gameData !== undefined) {
+
+  addGameHandler = (Title, Poster, Type, Year, email) => {
+
+    if (this.gameData !== null || this.gameData !== undefined) {
       const { user } = this.props.auth0;
-    let email = user.email;
-    console.log(this.state.gameData,'hello');
-    
-    const obj = {
-      Title:this.state.gameData[0].Title,
-      Poster:this.state.gameData[0].Poster,
-      Type:this.state.gameData[0].Type,
-      Year:this.state.gameData[0].Year,
-      email:email
-     
-      
-      
+      let email = user.email;
+      console.log(this.state.gameData, 'hello');
 
-    }
-    axios.post(`http://localhost:3001/addGame`, obj)
-      .then(result => {
-        this.setState({
-          gameData: result.data
+      const obj = {
+        Title: this.state.gameData[0].Title,
+        Poster: this.state.gameData[0].Poster,
+        Type: this.state.gameData[0].Type,
+        Year: this.state.gameData[0].Year,
+        email: email
+
+
+
+
+      }
+      axios.post(`http://localhost:3001/addGame`, obj)
+        .then(result => {
+          this.setState({
+            gameData: result.data
+          })
         })
-      })
-      .catch(err => {
-        console.log('error');
-      })
+        .catch(err => {
+          console.log('error');
+        })
 
 
-    }else{
+    } else {
       console.log('hi')
     }
-    
+
 
   }
   render() {
     return (
       <>
-      
-      <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}
-     >
+
+        <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}
+        >
           <fieldset>
 
 
             <input type='text' name='movieName' placeholder='Enter movie name' />
             <br />
             <Button style={{ marginTop: 20 }} type='submit'>Explore!</Button>
-            
+
 
           </fieldset>
         </Form>
-{/* <Update/> */}
+        {/* <Update/> */}
         {/* {this.state.favGamesArr.map(item => {
           return (
 
@@ -202,13 +203,13 @@ class Suhaib extends Component {
 
             </div> */}
 
-      <Row className="justify-content-between" >
-            
-            <Game
-             gameData={this.state.gameData}
-             addGameHandler={this.addGameHandler}
-             
-            />
+        <Row className="justify-content-between" >
+
+          <Game
+            gameData={this.state.gameData}
+            addGameHandler={this.addGameHandler}
+
+          />
 
         </Row>
 

@@ -6,7 +6,9 @@ import LoginButton from './loginButton';
 import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import ModalInfo from './modal'
-// import Logo from './logo'
+
+
+
 
 export class NavBar extends Component {
 

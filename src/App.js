@@ -3,10 +3,11 @@ import Movies from './HarounComponents/Movies';
 
 import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 
-
+import LoginButton from './YousefComponents/loginButton'
 import Suhaib from './suhaibComponents/suhaibMain'
 import Navbar from './YousefComponents/NavBar';
-
+import Home from './YousefComponents/HomePage';
+import { withAuth0 } from '@auth0/auth0-react';
 
 import {
   BrowserRouter as Router,
@@ -21,43 +22,23 @@ class App extends Component {
 
       <div>
         
-        
-
-
          <Navbar/>
+         
           <Router>
           <Switch>
-            <Route exact path="/game">  <Suhaib/>
-            </Route>
-            <Route exact path="/movie">  <Movies/>
-            </Route>
+
+
+            <Route exact path="/game">   <Suhaib/>  </Route>
+            <Route exact path="/movie">  <Movies/> </Route>
+            <Route exact path="/"> <Home/> </Route>
+
+            
           </Switch>
         </Router>
-
-     
-      
-
-
-        <h1>HEllO</h1>
-
-        
-      
-
-
-
-  
-       
-
-        
-        
-     
-     
-      
-
     
         </div>
     );
   }
 }
 
-export default App;
+export default withAuth0(App);
