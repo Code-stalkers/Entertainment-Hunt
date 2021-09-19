@@ -1,3 +1,4 @@
+  
 import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 import Game from './games';
@@ -95,7 +96,17 @@ class Suhaib extends Component {
         console.log('hi')
       }
 
+
+
   }
+
+
+  handleClose = () => {
+    this.setState({
+      showFlag: false
+    })
+  }
+
 
   handleClose = () => {
     this.setState({
@@ -171,6 +182,76 @@ class Suhaib extends Component {
     }
     
 
+
+  // showModalUpdate = (item) => {
+  //   this.setState({
+      
+  //     showFlag: true,
+  //     Title: item.Title,
+  //     Poster: item.Poster,
+  //     Type: item.Type,
+  //     Year: item.Year,
+  //     id: item._id
+  //   })
+  // }
+
+  // updateBook=(event)=>{
+  //   event.preventDefault();
+  //   const { user } = this.props.auth0;
+  //   let email = user.email;
+  //   const obj={
+  //     Title: event.target.movieName.value,
+  //     id:this.state.id
+  //   }
+  //   axios
+  //   .put(`http://localhost:3001/updateGame/${this.state.id}`,obj)
+  //   .then(result=>{
+  //     this.setState({
+  //       favGamesArr: result.data,
+  //       showFlag: false
+  //     })
+  //   })
+  //   .catch(err=>{
+  //     console.log('erorr')
+  //   })
+  // }
+  
+
+  addGameHandler = (Title,Poster,Type,Year,email) => {
+    
+    if(this.gameData !== null || this.gameData !== undefined) {
+      const { user } = this.props.auth0;
+    let email = user.email;
+    console.log(this.state.gameData,'hello');
+    
+    const obj = {
+      Title:this.state.gameData[0].Title,
+      Poster:this.state.gameData[0].Poster,
+      Type:this.state.gameData[0].Type,
+      Year:this.state.gameData[0].Year,
+      email:email
+     
+      
+      
+
+    }
+    axios.post(`http://localhost:3001/addGame`, obj)
+      .then(result => {
+        this.setState({
+          gameData: result.data
+        })
+      })
+      .catch(err => {
+        console.log('error');
+      })
+
+
+    }else{
+      console.log('hi')
+    }
+    
+
+
   }
   render() {
     return (
@@ -192,6 +273,11 @@ class Suhaib extends Component {
         {/* {this.state.favGamesArr.map(item => {
           return (
 
+
+            <div >
+              <Gameitem class="results"
+
+
             <div >
               <Gameitem class="results"
 
@@ -199,6 +285,7 @@ class Suhaib extends Component {
                 deleteBook={this.deleteBook}
                 showModalUpdate={this.showModalUpdate}
               />
+
 
             </div> */}
 

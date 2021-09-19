@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import {Modal,Button,Form} from 'react-bootstrap'
+import {Modal,Button,Form,Card} from 'react-bootstrap'
 
 class updateForm extends Component {
 
@@ -11,40 +11,66 @@ class updateForm extends Component {
       <div>
         <Modal show={this.props.show} onHide={this.props.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Movie </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body style={{ width: '25rem' }}>
+
+
+         { [
+  
+  'Success',
+ 
+].map((variant, idx) => (
+
+          <Card border="danger"
+    bg={variant.toLowerCase()}
+    key={idx}
+    text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+    style={{ width: '18rem',hight:'10rem' }}
+    className="mb-2"
+  >
+    <Card.Header>Movie Details</Card.Header>
+    <Card.Img variant="left" src={this.props.Poster} />
+    <Card.Body>
+      <Card.Title> {this.props.Title} </Card.Title>
+      <Card.Text>
+        You can Rank this Movies and share it with your friends
+        <br/>
+        {this.props.type}
+        <br/>
+        {this.props.Year}
+
+      </Card.Text>
+    </Card.Body>
+    </Card>))}
+    
+
+
           <Form
           style={{ marginBottom: "300px" }}
           style={{ marginLeft: "180px" }}
           
-          onSubmit={this.props.updateBook}
+          // onSubmit={this.props.updateMovie}
+
+          
         >
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Book Title</Form.Label>
-            <Form.Control type="text" name="title" defaultValue={this.props.title}/>
+            <Form.Label>Add Your Review </Form.Label>
+            <Form.Control type="text" name="title" placeholder="Review"/>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Book Description</Form.Label>
+            <Form.Label>Rank</Form.Label>
             <Form.Control
               type="text"
               name="description"
-              defaultValue={this.props.description}/>
+              placeholder="Rank your movie" />
             
           </Form.Group>
         
-          <Form.Label> </Form.Label>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="text" name="" defaultValue={this.props.status} />
-          </Form.Group>
-          <Form.Label>   </Form.Label>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="text" name="" defaultValue={this.props.email} />
-          </Form.Group>
-
+         
           <Button variant="primary" type="submit">
-            Update
+            Submit
           </Button>
         </Form>  
 
