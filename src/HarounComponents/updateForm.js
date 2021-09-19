@@ -9,6 +9,14 @@ class updateForm extends Component {
   render() {
     return (
       <div>
+         <Form
+          style={{ marginBottom: "300px" }}
+          style={{ marginLeft: "180px" }}
+          onSubmit={this.props.updateComment}
+          
+          // onSubmit={this.props.updateMovie}
+
+        >
         <Modal show={this.props.show} onHide={this.props.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Movie </Modal.Title>
@@ -46,33 +54,19 @@ class updateForm extends Component {
     
 
 
-          <Form
-          style={{ marginBottom: "300px" }}
-          style={{ marginLeft: "180px" }}
-          
-          // onSubmit={this.props.updateMovie}
-
-          
-        >
+         
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Add Your Review </Form.Label>
-            <Form.Control type="text" name="title" placeholder="Review"/>
+            <Form.Label>Add Your Review  </Form.Label>
+            <Form.Control type="text" name="comment" defaultValue={this.props.comment}/>
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Rank </Form.Label>
-            <Form.Control
-              type="text"
-              name="description"
-              placeholder="Rank your movie" />
-            
-          </Form.Group>
+        
         
          
-          <Button variant="primary" type="submit">
+          <Button   variant="primary" type="submit">
             Submit
           </Button>
-        </Form>  
+         
 
 
 
@@ -83,6 +77,9 @@ class updateForm extends Component {
       
           </Modal.Footer>
         </Modal>
+
+        </Form> 
+
       </div>
     );
   }

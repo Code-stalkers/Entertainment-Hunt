@@ -23,11 +23,15 @@ class Movies extends Component {
       show: false,
       Title: "",
       Year: "",
-      imdbID: "",
+      comment: "",
       Poster: "",
       Type: "",
+      filmId:'',
+
+      // comment:'',
     };
   }
+  
 
   componentDidMount = () => {
     axios
@@ -35,13 +39,16 @@ class Movies extends Component {
       .then((result) => {
         this.setState({
           moviesBackEndArray: result.data,
+          
         });
-        // console.log(this.state.moviesBackEndArray);
+        
       })
       .catch((err) => {
-        // console.log("/error");
+        console.log("/error");
       });
+     
   };
+  
 
   findMovies = async (event) => {
     event.preventDefault();
@@ -74,12 +81,15 @@ class Movies extends Component {
 
   showUpdateForm = (item) => {
     this.setState({
+
       show: true,
       Title: item.Title,
       Year: item.Year,
-      imdbID: item.imdbID,
+      // comment: item.comment,
       Poster: item.Poster,
       Type: item.Type,
+      filmId:item._id,
+      comment:item.comment,
     });
   };
 
@@ -91,6 +101,7 @@ class Movies extends Component {
       Year : item.Year,
       Type : item.Type,
       Poster : item.Poster,
+      comment : item.comment,
 
     }
 
@@ -102,6 +113,37 @@ console.log(save);
 
 
   }
+
+
+  updateComment = (event) => {
+    event.preventDefault();
+    
+    const obj = {
+
+      Title: event.target.Title.value,
+      Year: event.target.Year.value,
+      Type: event.target.Type.value,
+      Poster: event.target.Poster.value,
+
+      comment:event.target.comment.value,
+
+      filmId: this.state.filmId,
+      
+      
+    };
+    axios.put(`http://localhost:3001/updateComment/${this.state.filmId}`,obj)
+    .then(result =>{
+      this.setState({
+
+        moviesBackEndArray:result.data,
+        show : false
+      })
+    })
+    .catch(err=>{
+      console.log('error in updating the data');
+    })
+  }
+
 
   render() {
     return (
@@ -178,8 +220,9 @@ console.log(save);
           Year={this.state.Year}
           Type={this.state.Type}
           Poster={this.state.Poster}
-          imdbID={this.state.imdbID}
+          comment={this.state.comment}
           handleClose={this.handleClose}
+          updateComment={this.updateComment}
         />
       </div>
     );
