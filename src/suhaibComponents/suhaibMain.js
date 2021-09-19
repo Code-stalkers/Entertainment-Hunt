@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import GameItem from './gameItem'
-// import Update from './components/suhaibModal';
+// import GameItem from './gameItem'
+// import Update from 'suhaibModal';
 import { withAuth0 } from "@auth0/auth0-react";
 
 
@@ -25,6 +25,7 @@ class Suhaib extends Component {
 
 
     }
+    
   }
   // constructor(props) {
   //   super(props);
@@ -54,29 +55,6 @@ class Suhaib extends Component {
   // }
 
 
-  addGameHandler = (event) => {
-    event.preventDefault();
-    const { user } = this.props.auth0;
-    let email = user.email;
-    const obj = {
-      title:this.Title,
-      email:email
-      
-      
-
-    }
-    axios.post(`http://localhost:3001/addGame`, obj)
-      .then(result => {
-        this.setState({
-          favGamesArr: result.data
-        })
-      })
-      .catch(err => {
-        console.log('error');
-      })
-
-
-  }
 
   // deleteGame = (id) => {
   //   const { user } = this.props.auth0;
@@ -95,6 +73,7 @@ class Suhaib extends Component {
 
   getGameData = async (event) => {
     event.preventDefault()
+    
     let Title = event.target.movieName.value;
 
     const url = `http://localhost:3001/game?title=${Title}`;
@@ -106,17 +85,23 @@ class Suhaib extends Component {
         this.setState({
           gameData: result.data
         })
-        console.log(this.state.gameData);
+        
       })
       .catch(err => console.log(err))
+      
+      if(this.gameData!==null){
+        console.log(this.gameData);
+      }else{
+        console.log('hi')
+      }
 
   }
 
-  // handleClose = () => {
-  //   this.setState({
-  //     showFlag: false
-  //   })
-  // }
+  handleClose = () => {
+    this.setState({
+      showFlag: false
+    })
+  }
 
   // showModalUpdate = (item) => {
   //   this.setState({
@@ -150,24 +135,60 @@ class Suhaib extends Component {
   //     console.log('erorr')
   //   })
   // }
+  
 
+  addGameHandler = (Title,Poster,Type,Year,email) => {
+    
+    if(this.gameData !== null || this.gameData !== undefined) {
+      const { user } = this.props.auth0;
+    let email = user.email;
+    console.log(this.state.gameData,'hello');
+    
+    const obj = {
+      Title:this.state.gameData[0].Title,
+      Poster:this.state.gameData[0].Poster,
+      Type:this.state.gameData[0].Type,
+      Year:this.state.gameData[0].Year,
+      email:email
+     
+      
+      
+
+    }
+    axios.post(`http://localhost:3001/addGame`, obj)
+      .then(result => {
+        this.setState({
+          gameData: result.data
+        })
+      })
+      .catch(err => {
+        console.log('error');
+      })
+
+
+    }else{
+      console.log('hi')
+    }
+    
+
+  }
   render() {
     return (
       <>
       
       <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}
-      >
+     >
           <fieldset>
 
 
             <input type='text' name='movieName' placeholder='Enter movie name' />
             <br />
             <Button style={{ marginTop: 20 }} type='submit'>Explore!</Button>
-            <Button style={{ marginTop: 20 }} type='button' >add!</Button>
+            
 
           </fieldset>
         </Form>
-
+{/* <Update/> */}
         {/* {this.state.favGamesArr.map(item => {
           return (
 
@@ -185,6 +206,8 @@ class Suhaib extends Component {
             
             <Game
              gameData={this.state.gameData}
+             addGameHandler={this.addGameHandler}
+             
             />
 
         </Row>
