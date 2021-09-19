@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Movies from './HarounComponents/Movies';
-import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
+// import Movies from './HarounComponents/Movies';
+// import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
+import MarketCap from './ahmadComponents/marketCap';
 
 
 
@@ -20,14 +21,15 @@ class App extends Component {
 
 
 
-        <Movies/>
+        {/* <Movies/> */}
      
 
 
-       
+        
         <Navbar/>
+        <MarketCap/>
         <h1>HEllO</h1>
-        <Suhaib/>
+        {/* <Suhaib/> */}
       </div>
       
     );

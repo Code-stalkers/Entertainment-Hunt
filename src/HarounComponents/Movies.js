@@ -88,7 +88,6 @@ class Movies extends Component {
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
-                
               </Form.Select>
             </FloatingLabel>
             <br />
