@@ -30,6 +30,7 @@ export class Profile extends Component {
                                 <Card.Body>
                                     <Card.Title>{this.state.userName}</Card.Title>
                                     <Card.Title>{this.state.userEmail}</Card.Title>
+                                    
                                 </Card.Body>
                             </Card>
 

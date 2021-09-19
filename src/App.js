@@ -18,13 +18,9 @@ class App extends Component {
         <Navbar/>
 
 
-
-
         <Movies/>
      
 
-
-       
         <h1>HEllO</h1>
         <Suhaib/>
       </div>
