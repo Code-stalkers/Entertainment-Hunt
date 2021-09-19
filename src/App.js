@@ -11,9 +11,21 @@ class App extends Component {
 
   render() {
     return (
+
+      <div >
+        {/* style={{backgroundColor: '#000000'}} */}
+        
+
+
+        <Navbar/>
+
+        <Movies/>
+     
+
       <div>
     <Navbar />
         <Movies />
+
         <h1>HEllO</h1>
         <Marwan/>
         <Suhaib />
