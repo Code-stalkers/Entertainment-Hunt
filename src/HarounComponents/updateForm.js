@@ -60,7 +60,7 @@ class updateForm extends Component {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Rank </Form.Label>
+            <Form.Label>Rank</Form.Label>
             <Form.Control
               type="text"
               name="description"

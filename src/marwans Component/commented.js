@@ -19,7 +19,7 @@ class CommentBox extends React.Component {
         };
     }
     
-    componentDidMount = () =>{
+    getData = () =>{
         const  user  = this.props.auth0;
         const email = user.email;
         axios
@@ -51,7 +51,7 @@ class CommentBox extends React.Component {
         <div className="comment-box">
           <h2>Join the Discussion!</h2>
           <CommentForm addComment={this._addComment.bind(this)}/>
-          <Button id="comment-reveal" onClick={this._handleClick.bind(this)}>{buttonText}</Button>
+          <Button id="comment-reveal" getData={this.getData}>{buttonText}</Button>
           
           <h3>Comments</h3>
           <h4 className="comment-count">
@@ -70,15 +70,23 @@ class CommentBox extends React.Component {
       };
       this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
     }
-    
-    _handleClick() {
-      this.setState({
-        showComments: !this.state.showComments
-      });
-    }
-    
-    _getComments() {    
-      return this.state.comments.map((comment) => { 
+    _getComments() {
+        const  user  = this.props.auth0;
+        const email = user.email;
+        axios
+        .get(`http://localhost:3001/comment?email=${email}`)
+        .then( result =>{
+            this.setState({
+                commentsArr:result.data
+            })
+            console.log(result.data)
+        })
+        .catch (err =>{
+            console.log('error');
+        })
+        
+        
+      return this.state.commentsArr.map((comment) => { 
         return (
           <Comment 
             author={comment.author} 
@@ -87,6 +95,14 @@ class CommentBox extends React.Component {
         ); 
       });
     }
+
+    _handleClick() {
+      this.setState({
+        showComments: !this.state.commentsArr
+      });
+    }
+    
+ 
     
     _getCommentsTitle(commentCount) {
       if (commentCount === 0) {
