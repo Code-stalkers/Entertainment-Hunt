@@ -4,6 +4,7 @@ import  {Card,Button,Col,Row,Container, CardGroup} from 'react-bootstrap'
 // import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
 import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios"
 
 
 
@@ -28,6 +29,11 @@ class Movies extends Component {
   }
 
 
+
+
+   
+
+
   render() {
     return (
       <div>
@@ -36,7 +42,9 @@ class Movies extends Component {
        
           <Row  xs={1} md={3} className="g-4">
 
-{ this.props.moviesBackEndArray.map(item=>{
+
+
+{ this.props.moviesBackEndArray.map((item,index)=>{
 
     return(
       
@@ -70,7 +78,7 @@ class Movies extends Component {
     </Card.Text>
 
     <Button  style={{position: 'absolute', left: '0px', bottom: '0px', marginLeft:'2rem',
-  fontFamily: 'Impact, fantasy' } } onClick={this.disabledButton} disabled={this.state.disabled}  size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/> Add to Watchlist</Button>
+  fontFamily: 'Impact, fantasy' } } onClick={()=> this.props.addWatch(item)}    size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/> Add to Watchlist</Button>
   </Card.Body>
   
 </Card> ))

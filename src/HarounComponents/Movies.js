@@ -83,6 +83,26 @@ class Movies extends Component {
     });
   };
 
+
+  addWatch=async (item)=>{
+
+    let objEst={
+      Title : item.Title,
+      Year : item.Year,
+      Type : item.Type,
+      Poster : item.Poster,
+
+    }
+
+    // console.log(obj.Title);
+    
+const save = await axios.get(`${process.env.REACT_APP_URL}/addToWatchlist`,{params:objEst})
+console.log(save);
+
+
+
+  }
+
   render() {
     return (
       <div>
@@ -149,6 +169,7 @@ class Movies extends Component {
         <StaticData
           moviesBackEndArray={this.state.moviesBackEndArray}
           showUpdateForm={this.showUpdateForm}
+          addWatch={this.addWatch}
         />
 
         <UpdateForm
