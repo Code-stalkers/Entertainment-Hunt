@@ -20,6 +20,12 @@ class App extends Component {
         
         
 
+
+        <Movies/>
+     
+
+        <h1>HEllO</h1>
+
         <Navbar/>
         <h1>HEllO</h1>
 

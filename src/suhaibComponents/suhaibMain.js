@@ -25,6 +25,9 @@ class Suhaib extends Component {
       Year:''
 
 
+      gameData: []
+
+
     }
     
   }
@@ -78,8 +81,8 @@ class Suhaib extends Component {
     let Title = event.target.movieName.value;
 
     const url = `http://localhost:3001/game?title=${Title}`;
-    
-    let collectedData=axios
+
+    let collectedData = axios
       .get(url)
       .then(result => {
         console.log(result);
@@ -256,9 +259,13 @@ class Suhaib extends Component {
   render() {
     return (
       <>
+
+
+        <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}>
+
       
       <Form style={{ padding: 20 }} style={{ backgroundColor: '#dddd' }} onSubmit={this.getGameData}
-     >
+
           <fieldset>
 
 
@@ -289,6 +296,13 @@ class Suhaib extends Component {
 
             </div> */}
 
+
+        <Row className="justify-content-between" >
+
+          <Game
+            gameData={this.state.gameData}
+          />
+
       <Row className="justify-content-between" >
             
             <Game
@@ -296,6 +310,7 @@ class Suhaib extends Component {
              addGameHandler={this.addGameHandler}
              
             />
+
 
         </Row>
 
