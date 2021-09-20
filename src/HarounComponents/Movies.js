@@ -108,7 +108,7 @@ class Movies extends Component {
     // console.log(obj.Title);
     
 const save = await axios.get(`${process.env.REACT_APP_URL}/addToWatchlist`,{params:objEst})
-console.log(save);
+// console.log(save);
 
 
 
@@ -116,9 +116,10 @@ console.log(save);
 
 
 
-  userAddWatch=async (item)=>{
+  userAddWatch= (item)=>{
 
     let userObjEst={
+
       Title : item.Title,
       Year : item.Year,
       Type : item.Type,
@@ -127,10 +128,17 @@ console.log(save);
 
     }
 
-    // console.log(obj.Title);
+    console.log('rami',userObjEst);
     
-const userSave = await axios.get(`${process.env.REACT_APP_URL}/userAddingList`,{params:userObjEst})
-console.log(userSave);
+ axios
+.post(`${process.env.REACT_APP_URL}/userAddingList`,{userObjEst})
+.then((results) => {
+  console.log('important',results.data);
+})
+.catch((error) => {
+  console.log('error on adding ', error);
+})
+// console.log(userSave);
 
 
 
