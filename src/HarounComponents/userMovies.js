@@ -4,6 +4,7 @@ import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 // import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
 import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios"
 
 
 
@@ -12,19 +13,19 @@ class UserMovies extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      disabled :false,
-      active :false,
+      // disabled :false,
+      // active :false,
     
     };
   }
 
 
-  disabledButton= () => {
-    this.setState({
-      disabled :true,
-      active :false,
-    })
-  }
+  // disabledButton= () => {
+  //   this.setState({
+  //     disabled :true,
+  //     active :false,
+  //   })
+  // }
 
 
   render() {
@@ -70,7 +71,7 @@ class UserMovies extends Component {
 
     <Button  style={{position: 'absolute', left: '0px', bottom: '0px', marginLeft:'2rem',
   fontFamily: 'Impact, fantasy'
-  }} onClick={this.disabledButton} disabled={this.state.disabled}  size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
+  }} onClick={()=> this.props.userAddWatch(item)}   size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
   </Card.Body>
   
   </Card> ))

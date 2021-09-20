@@ -89,7 +89,7 @@ class Movies extends Component {
       Poster: item.Poster,
       Type: item.Type,
       filmId:item._id,
-      comment:item.comment,
+      comment:'Hellooooooooooooooooooooooo',
     });
   };
 
@@ -109,6 +109,28 @@ class Movies extends Component {
     
 const save = await axios.get(`${process.env.REACT_APP_URL}/addToWatchlist`,{params:objEst})
 console.log(save);
+
+
+
+  }
+
+
+
+  userAddWatch=async (item)=>{
+
+    let userObjEst={
+      Title : item.Title,
+      Year : item.Year,
+      Type : item.Type,
+      Poster : item.Poster,
+      comment : item.comment,
+
+    }
+
+    // console.log(obj.Title);
+    
+const userSave = await axios.get(`${process.env.REACT_APP_URL}/userAddingList`,{params:userObjEst})
+console.log(userSave);
 
 
 
@@ -206,6 +228,7 @@ console.log(save);
         <UserMovies
           variableMovies={this.state.variableMovies}
           showUpdateForm={this.showUpdateForm}
+          userAddWatch={this.userAddWatch}
         />
 
         <StaticData
