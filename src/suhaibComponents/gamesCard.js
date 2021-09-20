@@ -6,7 +6,12 @@ import React, { Component } from 'react';
 class GamesCard extends Component {
     render() {
         return (
-            < Card >
+
+
+
+
+            
+            < Card  onClick={this.props.handleShow}>
                 <Card.Img variant="top" src={this.props.Poster} className='cardimage' />
                 <Card.Body>
                     <Card.Title>{this.props.Title}</Card.Title>

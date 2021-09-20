@@ -4,7 +4,9 @@ import GamesCard from './gamesCard';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
+import { Card } from 'react-bootstrap';
 class Game extends Component {
+
 
     render() {
         return (
@@ -14,14 +16,34 @@ class Game extends Component {
                 {this.props.gameData.map(item => {
                     return (
                         <Col>
-                        <GamesCard
+
+
+                        
+<Card style={{ width: '18rem', height : 'contentFit' }} onClick={this.props.handleShow}>
+  <Card.Img variant="top" src={item.Poster} />
+  <Card.Body>
+    <Card.Title>{item.Title}</Card.Title>
+    <Card.Text>
+    {item.Type}  {item.Year}
+    </Card.Text>
+    <Button variant="primary" onClick={this.props.handleShow}  >Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+
+
+
+
+                        {/* <GamesCard handleShow={this.props.handleShow}
                         Title={item.Title}
                             Poster={item.Poster}
                             Type={item.Type}
                             Year={item.Year}
                             
-                        />
-                        <Button onClick={this.props.addGameHandler} type='button'>Save changes</Button>
+                        /> */}
+
+                       
                         </Col>
                         
                     );
