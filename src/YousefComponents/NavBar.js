@@ -60,7 +60,6 @@ export class NavBar extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
-                            {/* <Logo/> */}
 
                                 <MDBBtn variant="primary" onClick={this.handleShow}>
                                     Profile
@@ -85,7 +84,8 @@ export class NavBar extends Component {
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
-            </div>
+</div>
+
         )
     }
 }

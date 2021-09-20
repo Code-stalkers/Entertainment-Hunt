@@ -21,9 +21,9 @@ class App extends Component {
     return (
 
       <div>
-        
+
          <Navbar/>
-         
+
           <Router>
           <Switch>
 
@@ -32,11 +32,12 @@ class App extends Component {
             <Route exact path="/movie">  <Movies/> </Route>
             <Route exact path="/"> <Home/> </Route>
 
-            
+
           </Switch>
+
         </Router>
         <Footer/>
-    
+
         </div>
     );
   }
