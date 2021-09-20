@@ -7,6 +7,7 @@ import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import ModalInfo from './modal'
 
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 
@@ -61,9 +62,9 @@ export class NavBar extends Component {
                             <Nav className="me-auto">
                             {/* <Logo/> */}
 
-                                <Button variant="primary" onClick={this.handleShow}>
+                                <MDBBtn variant="primary" onClick={this.handleShow}>
                                     Profile
-                                </Button>
+                                </MDBBtn>
 
 
                                 <Nav.Link href="/">Home</Nav.Link>

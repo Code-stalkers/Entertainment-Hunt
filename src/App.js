@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Movies from './HarounComponents/Movies';
 
-import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
-
-import LoginButton from './YousefComponents/loginButton'
+// import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
+import Footer from './YousefComponents/footer'
+// import LoginButton from './YousefComponents/loginButton'
 import Suhaib from './suhaibComponents/suhaibMain'
 import Navbar from './YousefComponents/NavBar';
 import Home from './YousefComponents/HomePage';
@@ -35,6 +35,7 @@ class App extends Component {
             
           </Switch>
         </Router>
+        <Footer/>
     
         </div>
     );

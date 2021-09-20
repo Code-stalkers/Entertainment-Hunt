@@ -6,8 +6,6 @@ import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 import "bootstrap/dist/css/bootstrap.min.css";
 
 
-
-
 class UserMovies extends Component {
   constructor(props) {
     super(props);
