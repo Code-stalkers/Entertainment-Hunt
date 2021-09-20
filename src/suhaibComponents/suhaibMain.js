@@ -6,7 +6,7 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { withAuth0 } from '@auth0/auth0-react';
-import SuhaibModal from './suhaibModal';
+import SuhaibModal from './Gmaetoprofile';
 class Suhaib extends Component {
 
   constructor(props) {
@@ -26,9 +26,7 @@ class Suhaib extends Component {
 
   getGameData = async (event) => {
     event.preventDefault()
-
     let Title = event.target.movieName.value;
-
     const url = `http://localhost:3001/game?title=${Title}`;
 
     axios
@@ -49,49 +47,44 @@ class Suhaib extends Component {
     }
 
   }
-
-  handleClose = () => {
+  showUpdateForm = (item) => {
+    console.log(item)
     this.setState({
-      show: false
-    })
-  }
-  handleShow = () => {
-    this.setState({
-      show: true
-    })
-  }
-  // addTofavs = (event) => {
-  //   event.preventDefault() 
-  //   let comment = event.target.comment.value;
+      show: true,
+      Title: item.Title,
+      Year: item.Year,
+      Poster: item.Poster,
+      Type: item.Type,
+      filmId:item._id,
+      comment:item.comment,
+    });
+
+    
+  };
 
 
 
-  // }
-
-  addGameHandler = () => {
-      const { user } = this.props.auth0;
-    let email = user.email;
-    console.log(this.state.gameData,'hello');
-    const obj = {
-      Title:this.state.gameData[0].Title,
-      Poster:this.state.gameData[0].Poster,
-      Type:this.state.gameData[0].Type,
-      Year:this.state.gameData[0].Year,
-      email:email
+  addGameHandler=async (item)=>{
+    const { user } = this.props.auth0;
+      const email = user.email;
+      console.log(email)
+    let objEst={
+      Title : item.Title,
+      Year : item.Year,
+      Type : item.Type,
+      Poster : item.Poster,
+      comment : item.comment,
+  email: email
     }
-    axios.post(`http://localhost:3001/addGame`, obj)
-      .then(result => {
-        this.setState({
-          gameData: result.data
-        })
-      })
-      .catch(err => {
-        console.log('error');
-      })
-
-
-
+const save = await axios.post(`http://localhost:3001/addfavgame`,objEst)
+this.setState({
+  
+  favGamesArr :save.data
+  
+})
+console.log(this.state.favGamesArr,'hi');
   }
+
   render() {
     return (
       <>
@@ -101,15 +94,9 @@ class Suhaib extends Component {
           <br />
           <Button style={{ marginTop: 20 }} type='submit'>Explore!</Button>
         </Form>
-        <Row className="justify-content-between" >
-
-          <Game
-            gameData={this.state.gameData}
-            addGameHandler={this.addGameHandler}
-            handleShow={this.handleShow}
-          />
+        <Row className="justify-content-between">
+          <Game favGamesArr={this.state.gameData} addGameHandler={this.addGameHandler}/>
         </Row>
-        <SuhaibModal show={this.state.show} handleClose={this.handleClose} gameData={this.state.gameData} addGameHandler={this.addGameHandler} addTofavs={this.addTofavs} />
 
       </>
     );
@@ -117,3 +104,36 @@ class Suhaib extends Component {
 }
 
 export default withAuth0(Suhaib);
+
+  // addTofavs = (event) => {
+  //   event.preventDefault() 
+  //   let comment = event.target.comment.value;
+
+
+
+  // }
+
+  // addGameHandler = () => {
+  //     const { user } = this.props.auth0;
+  //   let email = user.email;
+  //   console.log(this.state.gameData,'hello');
+  //   const obj = {
+  //     Title:this.state.gameData[0].Title,
+  //     Poster:this.state.gameData[0].Poster,
+  //     Type:this.state.gameData[0].Type,
+  //     Year:this.state.gameData[0].Year,
+  //     email:email
+  //   }
+  //   axios.post(`http://localhost:3001/addGame`, obj)
+  //     .then(result => {
+  //       this.setState({
+  //         gameData: result.data
+  //       })
+  //     })
+  //     .catch(err => {
+  //       console.log('error');
+  //     })
+
+
+
+  // }

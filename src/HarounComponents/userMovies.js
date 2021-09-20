@@ -50,7 +50,6 @@ class UserMovies extends Component {
 
                     ].map((variant, idx) => (
 
-
                       <Card bg={variant.toLowerCase()}
                         key={idx}
                         text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
@@ -61,7 +60,6 @@ class UserMovies extends Component {
                           <Card.Title style={{ fontFamily: 'Cursive' }}>{item.Title}</Card.Title>
                           <Card.Text style={{ fontFamily: 'Cursive' }}>
                             <span> {item.Year}   </span>
-
                             <span> {item.Type}   </span>
                           </Card.Text>
 

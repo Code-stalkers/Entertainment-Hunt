@@ -19,12 +19,12 @@ componentDidMount = () => {
     const user  = this.props.auth0;
     const email = user.email;
     axios 
-      .get(`http://localhost:3001/addToWatchlist?email=${email}`)
-      .then(result => {
+    .get(`http://localhost:3001/films?email=${email}`)
+    .then(result => {
+          console.log(result.data)
         this.setState({
             Array: result.data
         })
-        console.log(result.data)
       })
       .catch(err => {
         console.log('error');
