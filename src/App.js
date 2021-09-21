@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Movies from './HarounComponents/Movies';
+import Movies from './HarounComponents/Movies';
 
 // import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
 import Footer from './YousefComponents/footer'
@@ -29,8 +29,10 @@ class App extends Component {
           <Switch>
 
 
-            {/* <Route exact path="/game">   <Suhaib/>  </Route>
-            <Route exact path="/movie">  <Movies/> </Route> */}
+            {/* <Route exact path="/game">   <Suhaib/>  </Route> */}
+
+
+            <Route exact path="/movie">  <Movies/> </Route> 
             <Route exact path="/"> <Home/> </Route>
             <Route  path="/crypto">   <MarketCap/>  </Route>
 
