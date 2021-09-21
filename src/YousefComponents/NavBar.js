@@ -71,7 +71,7 @@ export class NavBar extends Component {
                                 <NavDropdown title="Pages" id="collasible-nav-dropdown">
                                     <NavDropdown.Item href="/game">Games </NavDropdown.Item>
                                     <NavDropdown.Item href="/movie"> Movies</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Coins</NavDropdown.Item>
+                                    <NavDropdown.Item href="/crypto">Coins</NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
                             <Nav>

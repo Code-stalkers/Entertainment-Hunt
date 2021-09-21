@@ -32,7 +32,7 @@ class App extends Component {
             {/* <Route exact path="/game">   <Suhaib/>  </Route>
             <Route exact path="/movie">  <Movies/> </Route> */}
             <Route exact path="/"> <Home/> </Route>
-            <Route exact path="/marketCap">   <MarketCap/>  </Route>
+            <Route  path="/crypto">   <MarketCap/>  </Route>
 
 
           </Switch>
