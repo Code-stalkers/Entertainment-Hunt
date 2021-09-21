@@ -148,12 +148,13 @@ class MarketCap extends React.Component {
           handleShow={this.handleShow}
           handleClose={this.handleClose}
         />
+        <h2 id='h2'>Top 20 Coins By Market Cap 📈</h2>
         <CoinsTable
           top20Coins={this.state.top20Coins}
           searchedCoin={this.state.searchedCoin}
           tableFlag={this.state.tableFlag}
         />
-        <Button onClick={this.handleFormShow}>Write your recommendation</Button>
+        <Button id='recommendation' onClick={this.handleFormShow}>Write your recommendation</Button>
         {this.state.showForm ? (
           <RecommendationForm addRecommendation={this.addRecommendation} />
         ) : null}

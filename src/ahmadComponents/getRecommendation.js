@@ -8,9 +8,9 @@ class GetRecommendation extends React.Component {
   render() {
     return (
       <div>
-        <Form onSubmit={this.props.getRecommendation}>
+        <Form Id='recommendationForm'  onSubmit={this.props.getRecommendation}>
           <Row>
-            <Col xs={2}>
+            <Col xs={6}>
               <FloatingLabel
                 controlId="floatingInput"
                 label="Enter Coin:"
@@ -21,7 +21,7 @@ class GetRecommendation extends React.Component {
             </Col>
             <Col>
               <Button
-                variant="primary"
+                variant="success"
                 type="submit"
                 onClick={this.props.handleShow}
               >
