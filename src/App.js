@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Movies from './HarounComponents/Movies';
 
 // import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
-// import Footer from './YousefComponents/footer'
+import Footer from './YousefComponents/footer'
 // import LoginButton from './YousefComponents/loginButton'
  import Suhaib from './suhaibComponents/suhaibMain'
 // import Navbar from './YousefComponents/NavBar';
@@ -15,6 +15,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Header from './YousefComponents/Header';
 
 
 class App extends Component {
@@ -23,8 +24,9 @@ class App extends Component {
 
       <div>
 
-         {/* <Navbar/> */}
+       <Header/>
 
+         {/* <Navbar/> */}
           <Router>
           <Switch>
 
@@ -38,7 +40,7 @@ class App extends Component {
           </Switch>
 
         </Router>
-        {/* <Footer/> */}
+        <Footer/>
 
         </div>
     );
