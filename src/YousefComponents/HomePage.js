@@ -26,7 +26,7 @@ export default function App() {
                         <div class="container">
                             <div class="row p-5">
                                 <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                                    <img class="img-fluid" src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80" alt="" />
+                                    <img class="img-fluid" src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80" width="640" height="360" alt="" />
                                 </div>
                                 <div class="col-lg-6 mb-0 d-flex align-items-center">
                                     <div class="text-align-left align-self-center">
@@ -114,7 +114,7 @@ export default function App() {
                                         </li>
                                         <li class="text-muted text-right">$240.00</li>
                                     </ul> */}
-                                    <a href="#" class="h2 text-decoration-none text-dark">MOVIES PAGE</a> <br />
+                                    <a href="#" class="h2 text-decoration-none text-dark">MOVIES PAGE</a> <br /><br />
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                                     </p>
@@ -143,10 +143,10 @@ export default function App() {
                                     {/* </li> */}
                                     {/* <li class="text-muted text-right">$480.00</li> */}
                                     {/* </ul> */}
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                    <a href="#" class="h2 text-decoration-none text-dark">GAMES PAGE</a><br /><br />
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
-                                    </p>
+                                    </p><br />
                                     <Link to="/game">
                                         <MDBBtn className='mx-2' color='dark' className="is-rounded">
                                             <span>Visit Page</span>
@@ -172,10 +172,10 @@ export default function App() {
                                         </li>
                                         <li class="text-muted text-right">$360.00</li>
                                     </ul> */}
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                    <a href="#" class="h2 text-decoration-none text-dark">CRYPTO PAGE</a><br /><br />
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
-                                    </p>
+                                    </p><br />
                                     <Link to="/crypto">
                                         <MDBBtn className='mx-2' color='dark' className="is-rounded">
                                             <span>Visit Page</span>
@@ -193,9 +193,7 @@ export default function App() {
                     <div class="col-lg-6 m-auto">
                         <h1 class="h1">OUR TEAM</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            We're a Group of 5 Web-Developers who made this website for the sake of enjoyment
                         </p>
                     </div>
                 </div>
