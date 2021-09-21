@@ -16,7 +16,7 @@ class HomePage extends Component {
                 <div>
                     <Carousel className="carosel">
                         <Carousel.Item interval={800}>
-                            <img style={{height: 'px'}}
+                            <img style={{ height: 'px' }}
                                 className="d-block w-100 "
                                 src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80"
                                 alt="MOVIES"
@@ -55,7 +55,7 @@ class HomePage extends Component {
 
 
                     <CardGroup style={{ gap: "50px", margin: "50px" }}>
-                        <Card className = "Yousef-card">
+                        <Card className="Yousef-card">
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdmllc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/100px160" />
                             <Card.Body>
                                 <Card.Title>MOVIES</Card.Title>
@@ -65,8 +65,8 @@ class HomePage extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <Link to="/movie">
-                                    <MDBBtn className='mx-2' color='dark'  className="is-rounded">
-                                    <span>Visit Page</span>
+                                    <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                        <span>Visit Page</span>
                                     </MDBBtn>
                                 </Link>
 
@@ -74,7 +74,7 @@ class HomePage extends Component {
 
                             </Card.Footer>
                         </Card>
-                        <Card className = "Yousef-card">
+                        <Card className="Yousef-card">
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80/100px160" />
                             <Card.Body>
                                 <Card.Title>GAMES</Card.Title>
@@ -84,14 +84,14 @@ class HomePage extends Component {
                             </Card.Body>
                             <Card.Footer>
                                 <Link to="/game">
-                                <MDBBtn className='mx-2' color='dark'  className="is-rounded">
-                                    <span>Visit Page</span>
+                                    <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                        <span>Visit Page</span>
                                     </MDBBtn>
                                 </Link>
 
                             </Card.Footer>
                         </Card>
-                        <Card className = "Yousef-card">
+                        <Card className="Yousef-card">
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80/100px160" />
                             <Card.Body>
                                 <Card.Title>cryptocurrencies</Card.Title>
@@ -100,9 +100,9 @@ class HomePage extends Component {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                            <Link to="/">
-                            <MDBBtn className='mx-2' color='dark'  className="is-rounded">
-                                    <span>Visit Page</span>
+                                <Link to="/">
+                                    <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                        <span>Visit Page</span>
                                     </MDBBtn>
                                 </Link>
                             </Card.Footer>
