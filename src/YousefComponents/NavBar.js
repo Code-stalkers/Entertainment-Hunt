@@ -12,33 +12,19 @@ import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 export class NavBar extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
-            show: false,
-
-        }
-    }
+            show: false, }}
 
     handleShow = () => {
-
         this.setState({
-
-            show: true,
-        })
-        console.log("hello");
-        console.log(this.state.show);
-    }
+            show: true,})}
 
 
     handleClose = () => {
-
         this.setState({
-
-            show: false,
-        })
-    }
+            show: false, })}
 
 
 
@@ -61,7 +47,7 @@ export class NavBar extends Component {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
 
-                                <MDBBtn variant="primary" onClick={this.handleShow}>
+                                <MDBBtn variant="primary"  onClick={this.handleShow}>
                                     Profile
                                 </MDBBtn>
 

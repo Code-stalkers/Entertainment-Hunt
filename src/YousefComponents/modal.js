@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Modal } from 'react-bootstrap';
 import { withAuth0 } from '@auth0/auth0-react';
-
-
-
 export class ModalInfo extends Component {
     render() {
         const {user,isAuthenticated} = this.props.auth0;

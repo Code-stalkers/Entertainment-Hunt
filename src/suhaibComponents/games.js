@@ -4,8 +4,22 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
+import { Notification } from 'rsuite';
 class Game extends Component {
+    constructor(props){
+        super(props);
+        this.state={
 
+        }
+    }
+
+     open= function () {
+        Notification.open({
+          title: 'added',
+          duration: 20000,
+        //   description: <Paragraph style={{ width: 320 }} rows={2} />
+        });
+      }
 
     render() {
         return (
@@ -22,7 +36,7 @@ class Game extends Component {
                                             <Card.Text>
                                                 {item.Type}  {item.Year}
                                             </Card.Text>
-                                            <Button variant="primary" onClick={() => this.props.addGameHandler(item)} >Go somewhere</Button>
+                                            <Button variant="primary"  onClick={this.open} onClick={() => this.props.addGameHandler(item)} >fav</Button>
                                         </Card.Body>
                                     </Card>
 

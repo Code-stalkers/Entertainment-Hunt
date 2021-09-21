@@ -6,6 +6,7 @@ import RecommendationForm from "./recommendationForm";
 import GetRecommendation from "./getRecommendation";
 import Search from "./search";
 import UsersRecommendation from "./usersRecommendation";
+import './main.css';
 
 class MarketCap extends React.Component {
   constructor(props) {
@@ -117,7 +118,7 @@ class MarketCap extends React.Component {
   render() {
     return (
       <>
-      <div>
+      <div id='marketInfo'>
         <h4>
           Market cap in usd:{" "}
           <Badge bg="secondary">
