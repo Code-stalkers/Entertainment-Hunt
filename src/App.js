@@ -8,6 +8,7 @@ import Footer from './YousefComponents/footer'
 import Navbar from './YousefComponents/NavBar';
 import Home from './YousefComponents/HomePage';
 import { withAuth0 } from '@auth0/auth0-react';
+import MarketCap from './ahmadComponents/marketCap';
 
 import {
   BrowserRouter as Router,
@@ -31,6 +32,7 @@ class App extends Component {
             {/* <Route exact path="/game">   <Suhaib/>  </Route>
             <Route exact path="/movie">  <Movies/> </Route> */}
             <Route exact path="/"> <Home/> </Route>
+            <Route exact path="/marketCap">   <MarketCap/>  </Route>
 
 
           </Switch>
