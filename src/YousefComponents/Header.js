@@ -80,12 +80,41 @@
 
 
 import React, { Component } from 'react'
+import LoginButton from './loginButton';
+import LogoutButton from './LogoutButton';
+import { withAuth0 } from '@auth0/auth0-react';
+import ModalInfo from './modal';
+import { MDBBtn } from 'mdb-react-ui-kit';
+
+
 
 export class Header extends Component {
+
+    constructor(props) {
+                super(props);
+                this.state = {
+                    show: false, }}
+        
+            handleShow = () => {
+                this.setState({
+                    show: true,})}
+        
+        
+            handleClose = () => {
+                this.setState({
+                    show: false, })}
+        
+
+
+
+
     render() {
         return (
+            
             <div>
-                 <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+     
+
+                 {/* <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
                 <div class="container text-light">
                     <div class="w-100 d-flex justify-content-between">
                         <div>
@@ -102,7 +131,7 @@ export class Header extends Component {
                         </div>
                     </div>
                 </div>
-            </nav>
+            </nav> */}
 
             <nav class="navbar navbar-expand-lg navbar-light shadow">
                 <div class="container d-flex justify-content-between align-items-center">
@@ -130,6 +159,10 @@ export class Header extends Component {
                                 <li class="nav-item">
                                     <a class="nav-link" href="/crypto">crypto</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/profile">Profile</a> 
+                                </li> 
+                               
                             </ul>                           
                         </div>
                         <div class="navbar align-self-center d-flex">

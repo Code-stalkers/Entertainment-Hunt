@@ -94,29 +94,29 @@ export class footer extends Component {
                             <ul class="list-unstyled text-light footer-link-list">
                                 <li>
                                     <i class="fas fa-map-marker-alt fa-fw"></i>
-                                    India
+                                    JORDAN
                                 </li>
                                 <li>
                                     <i class="fa fa-phone fa-fw"></i>
-                                    <a class="text-decoration-none" href="#">000-000-0000</a>
+                                    <a class="text-decoration-none" href="#">+962-779-985647</a>
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope fa-fw"></i>
-                                    <a class="text-decoration-none" href="#">info@company.com</a>
+                                    <a class="text-decoration-none" href="#">Code-Stalkers@gmail.com</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="col-md-4 pt-5">
-                            <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                            <h2 class="h2 text-light border-bottom pb-3 border-light">Content</h2>
                             <ul class="list-unstyled text-light footer-link-list">
-                                <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                                <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                                <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                                <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
+                                <li><a class="text-decoration-none" href="#">MOVIES</a></li>
+                                <li><a class="text-decoration-none" href="#">GAMES</a></li>
+                                <li><a class="text-decoration-none" href="#">CRYPTO CURRENCIES</a></li>
+                                {/* <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
                                 <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
                                 <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li> */}
                             </ul>
                         </div>
 
@@ -168,8 +168,8 @@ export class footer extends Component {
                         <div class="row pt-2">
                             <div class="col-12">
                                 <p class="text-left text-light">
-                                    Copyright &copy; 2021 Company Name
-                                    | Designed by <a rel="sponsored" href="#" target="_blank">Jassa</a>
+                                    Copyright &copy; 2021 Code Stalkers
+                                    {/* | Designed by <a rel="sponsored" href="#" target="_blank">Jassa</a> */}
                                 </p>
                             </div>
                         </div>
