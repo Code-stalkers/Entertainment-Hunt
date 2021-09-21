@@ -11,24 +11,30 @@ class Movies extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // disabled :false,
-      // active :false,
+    
     };
   }
 
-  // disabledButton= () => {
-  //   this.setState({
-  //     disabled :true,
-  //     active :false,
-  //   })
-  // }
+ 
 
   render() {
     return (
       <div>
         
+
+        <center>
+
+        <div  style={{backgroundColor:'#CDF3A2' , width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
+        </div>
+        </center>
+        
         <center>
           {" "}
+          <br />
+        <br />
+        <br />
+      
+       
           <Carousel
             variant="dark"
             style={{ borderRadius: "20px", width: "60vw" }}
@@ -36,26 +42,52 @@ class Movies extends Component {
             {this.props.moviesBackEndArray.map((item) => {
               return (
                 <Carousel.Item>
+                     <h5 style={{ color: "#000" }, {fontFamily:'cursive'}}> 
+                  
+                  {item.Title}  </h5>
                   <img
                     src={item.Poster}
                     alt="First slide"
                     style={{
-                      width: "24rem",
-                      height: "24rem",
+                      width: "48rem",
+                      height: "28rem",
                       borderRadius: "20px",
                       objectFit: "fill",
                     }}
                   />
-                  <Carousel.Caption>
-                    <h5 style={{ color: "#FFFFFF" }}>{item.Title}</h5>
-                  </Carousel.Caption>
+                 
+                  {/* <Carousel.Caption> */}
+                    <br/>
+                    <br/>
+                    <br/>
+                 
+                  {/* </Carousel.Caption> */}
                 </Carousel.Item>
               );
             })}
           </Carousel>{" "}
+          <br/>
+        <br/>
         </center>
+        <br/>
+        <br/>
+        <br/> 
+        <br/>
+        <br/>
+
+        {/* <center>
+
+        <div  style={{backgroundColor:'#CDF3A2' , width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
+        </div>
+        </center> */}
+        
+        
 
         
+        
+
+
+
         {/* <CardGroup> */}
 
 {/* 
