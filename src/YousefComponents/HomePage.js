@@ -137,7 +137,8 @@ import './Home.css';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
+import { Link } from 'react-router-dom';
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 export default function App() {
 
@@ -145,7 +146,7 @@ export default function App() {
     return (
         <div className="app">
 
-           
+
 
 
 
@@ -167,7 +168,7 @@ export default function App() {
                                         {/* <h1 class="h1 text-success"></h1> */}
                                         <h1 class="h1">Movies</h1>
                                         <p>
-                                        Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. They can help us to better understand our own lives, the lives of those around us and even how our society and culture operate.
+                                            Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. They can help us to better understand our own lives, the lives of those around us and even how our society and culture operate.
                                         </p>
                                     </div>
                                 </div>
@@ -185,7 +186,7 @@ export default function App() {
                                         {/* <h1 class="h1">Lorem Ipsum</h1> */}
                                         <h1 class="h1">GAMES</h1>
                                         <p>
-                                        Studies have shown that playing video games regularly may increase gray matter in the brain and boost brain connectivity. (Gray matter is associated with muscle control, memories, perception, and spatial navigation.)
+                                            Studies have shown that playing video games regularly may increase gray matter in the brain and boost brain connectivity. (Gray matter is associated with muscle control, memories, perception, and spatial navigation.)
                                         </p>
                                     </div>
                                 </div>
@@ -203,7 +204,7 @@ export default function App() {
                                         {/* <h1 class="h1">Lorem Ipsum</h1> */}
                                         <h1 class="h1">CRYPTOCURRENCY</h1>
                                         <p>
-                                        A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward.
+                                            A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward.
                                         </p>
                                     </div>
                                 </div>
@@ -246,7 +247,7 @@ export default function App() {
                         <h2 class="h5 text-center mt-3 mb-3">SUHAIB</h2>
                         <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
                     </div>
-                
+
                     <div class="col-12 col-md-4 p-5 mt-3">
                         <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=BJjc-biFydIAX_IfOK9&_nc_ht=scontent.famm10-1.fna&oh=46b802606eb9788b0df6e856b23354d9&oe=6170D23D" class="rounded-circle img-fluid border" /></a>
                         <h2 class="h5 text-center mt-3 mb-3">MOHAMMAD</h2>
@@ -261,10 +262,10 @@ export default function App() {
                         <div class="col-lg-6 m-auto">
                             <h1 class="h1">OUR SERVICES</h1>
                             <p>
-                       Entertainment is an online database of information related to films, television programs,<br /> home videos,
-//                     video games, and streaming content online – including cast, <br/>
-//                     production crew and personal biographies,
-//                     plot summaries, trivia, ratings.
+                                Entertainment is an online database of information related to films, television programs,home videos,
+                                video games, and streaming content online – including cast,
+                                production crew and personal biographies,
+                                plot summaries, trivia, ratings.
                             </p>
                         </div>
                     </div>
@@ -272,10 +273,10 @@ export default function App() {
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdmllc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
+                                    {/* <ul class="list-unstyled d-flex justify-content-between">
                                         <li>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
@@ -284,46 +285,56 @@ export default function App() {
                                             <i class="text-muted fa fa-star"></i>
                                         </li>
                                         <li class="text-muted text-right">$240.00</li>
-                                    </ul>
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                    </ul> */}
+                                    <a href="#" class="h2 text-decoration-none text-dark">MOVIES PAGE</a> <br />
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                                     </p>
-                                    <p class="text-muted">Reviews (24)</p>
+                                    <Link to="/movie">
+                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                         <span>Visit Page</span>
+                                     </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (24)</p> */}
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
+                                    {/* <ul class="list-unstyled d-flex justify-content-between"> */}
+                                        {/* <li> */}
+                                            {/* <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                        <li class="text-muted text-right">$480.00</li>
-                                    </ul>
+                                            <i class="text-muted fa fa-star"></i> */}
+                                        {/* </li> */}
+                                        {/* <li class="text-muted text-right">$480.00</li> */}
+                                    {/* </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
                                     </p>
-                                    <p class="text-muted">Reviews (48)</p>
+                                    <Link to="/game">
+                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                         <span>Visit Page</span>
+                                     </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (48)</p> */}
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_03.jpg" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
+                                    {/* <ul class="list-unstyled d-flex justify-content-between">
                                         <li>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
@@ -332,12 +343,17 @@ export default function App() {
                                             <i class="text-warning fa fa-star"></i>
                                         </li>
                                         <li class="text-muted text-right">$360.00</li>
-                                    </ul>
+                                    </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
                                     </p>
-                                    <p class="text-muted">Reviews (74)</p>
+                                    <Link to="/crypto">
+                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                         <span>Visit Page</span>
+                                     </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (74)</p> */}
                                 </div>
                             </div>
                         </div>
