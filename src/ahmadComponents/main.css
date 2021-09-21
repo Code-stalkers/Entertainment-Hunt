@@ -1,3 +1,70 @@
-#marketInfo{
-    display: inline-flex;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+  background-color: #e9eef5;
+  font-family: "Roboto", sans-serif;
+  
 }
+h4 {
+  font-size: 18px;
+  margin-left: 60px;
+}
+
+#marketInfo {
+  display: inline-flex;
+  margin-top: 50px;
+  margin-left: 15%;
+}
+
+.bg-secondary {
+  background-color: #59ab6e !important;
+}
+.btn-success {
+  margin-top: 10px;
+  margin-left: -15px;
+  background-color: #59ab6e;
+  border-color: #59ab6e;
+}
+
+#search-Form {
+    margin-left: 30%;
+    margin-top: 60px;
+  }
+#recommendationForm{
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+#h2{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#table{
+    background-color: #212934;
+    color: #59ab6e ;
+}
+#recommendation{
+    margin-left: 42%;
+    margin-top: 10px;
+  background-color: #59ab6e;
+  border-color: #59ab6e;
+}
+#cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    border-radius: 10px;
+    gap:10px;
+    padding: 0!important;
+}
+
+#submitButton{
+ margin-left: 45%;
+ width: 150px;
+ margin-bottom: 30px;
+}
+
+
+
+
+

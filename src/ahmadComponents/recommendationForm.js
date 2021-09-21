@@ -17,7 +17,7 @@ class RecommendationForm extends React.Component {
             <Form.Label>Recommendation</Form.Label>
             <Form.Control as="textarea" rows={4} />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit" id='submitButton'>
             Submit
           </Button>
         </Form>

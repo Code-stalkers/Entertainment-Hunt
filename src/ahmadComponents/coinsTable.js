@@ -4,7 +4,7 @@ class CoinsTable extends React.Component {
   render() {
     return (
       <>
-        <Table responsive>
+        <Table responsive id='table'>
           <thead>
             <tr>
               <th>Rank</th>

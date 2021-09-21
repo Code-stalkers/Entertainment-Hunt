@@ -4,9 +4,9 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <Form onSubmit={this.props.search}>
-          <Row>
-            <Col xs={2}>
+        <Form Id='search-Form'  onSubmit={this.props.search}>
+          <Row >
+            <Col xs={6}>
               <FloatingLabel
                 controlId="symbol"
                 label="Enter Coin:"
@@ -17,7 +17,7 @@ class Search extends React.Component {
             </Col>
             <Col>
               <Button
-                variant="primary"
+                variant="success"
                 type="submit"
               >
                 Search
