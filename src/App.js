@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 import Movies from './HarounComponents/Movies';
-
 // import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
-// import Footer from './YousefComponents/footer'
+import Footer from './YousefComponents/Footer'
 // import LoginButton from './YousefComponents/loginButton'
- import Suhaib from './suhaibComponents/suhaibMain'
+import Suhaib from './suhaibComponents/suhaibMain'
 // import Navbar from './YousefComponents/NavBar';
 import Home from './YousefComponents/HomePage';
 import { withAuth0 } from '@auth0/auth0-react';
 import MarketCap from './ahmadComponents/marketCap';
+// import Profile from './YousefComponents/profile';
+
 
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import Header from './YousefComponents/Header';
 
 
 class App extends Component {
@@ -23,24 +25,25 @@ class App extends Component {
 
       <div>
 
-         {/* <Navbar/> */}
+        <Header />
 
-          <Router>
+        {/* <Navbar/> */}
+        <Router>
           <Switch>
 
 
-            <Route exact path="/game">   <Suhaib/>  </Route> 
-            <Route exact path="/movie">  <Movies/> </Route> 
-            <Route exact path="/"> <Home/> </Route>
-            <Route  path="/crypto">   <MarketCap/>  </Route>
-
+            <Route exact path="/game">   <Suhaib />  </Route>
+            <Route exact path="/movie">  <Movies />  </Route>
+            <Route exact path="/">         <Home />  </Route>
+            <Route path="/crypto">   <MarketCap />  </Route>
+            {/* <Route path="/Profile">   <Profile />   </Route> */}
 
           </Switch>
 
         </Router>
-        {/* <Footer/> */}
+        <Footer />
 
-        </div>
+      </div>
     );
   }
 }

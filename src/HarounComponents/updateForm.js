@@ -17,7 +17,7 @@ class updateForm extends Component {
           // onSubmit={this.props.updateMovie}
 
         >
-        <Modal show={this.props.show} onHide={this.props.handleClose}>
+        <Modal  show={this.props.show} onHide={this.props.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Movie </Modal.Title>
           </Modal.Header>
@@ -30,7 +30,7 @@ class updateForm extends Component {
  
 ].map((variant, idx) => (
 
-          <Card border="danger"
+          <Card style={{width: '18rem'  , marginLeft:'5rem'}} border="danger"
     bg={variant.toLowerCase()}
     key={idx}
     text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
@@ -38,11 +38,11 @@ class updateForm extends Component {
     className="mb-2"
   >
     <Card.Header>Movie Details</Card.Header>
-    <Card.Img variant="left" src={this.props.Poster} />
+    <Card.Img  variant="left" src={this.props.Poster}  />
     <Card.Body>
       <Card.Title> {this.props.Title} </Card.Title>
       <Card.Text>
-        You can Rank this Movies and share it with your friends
+      
         <br/>
         {this.props.type}
         <br/>
@@ -55,17 +55,7 @@ class updateForm extends Component {
 
 
          
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Add Your Review  </Form.Label>
-            <Form.Control type="text" name="comment" defaultValue={this.props.comment}/>
-          </Form.Group>
-
-        
-        
          
-          <Button   variant="primary" type="submit">
-            Submit
-          </Button>
          
 
 

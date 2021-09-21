@@ -13,6 +13,8 @@ import {
 } from "react-bootstrap";
 import UserMovies from "./userMovies";
 import UpdateForm from "./updateForm";
+import renderUserList from "./renderUserList";
+
 
 class Movies extends Component {
   constructor(props) {
@@ -27,6 +29,7 @@ class Movies extends Component {
       Poster: "",
       Type: "",
       filmId:'',
+      // fanFavorite :[],
 
       // comment:'',
     };
@@ -35,7 +38,7 @@ class Movies extends Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/static`)
+      .get(`http://localhost:3001/static`) 
       .then((result) => {
         this.setState({
           moviesBackEndArray: result.data,
@@ -48,6 +51,8 @@ class Movies extends Component {
       });
      
   };
+
+ 
   
 
   findMovies = async (event) => {
@@ -89,7 +94,7 @@ class Movies extends Component {
       Poster: item.Poster,
       Type: item.Type,
       filmId:item._id,
-      comment:'Hellooooooooooooooooooooooo',
+      comment:'',
     });
   };
 
@@ -178,8 +183,9 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
   render() {
     return (
       <div>
-        <br />
-        <br />
+
+
+        
         <br />
         <Container>
           <Form onSubmit={this.findMovies}>
@@ -227,23 +233,27 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
           </Form>
         </Container>
 
-        <br />
-        <br />
+       
+        <renderUserList />
 
         <br />
         <br />
+        
 
-        <UserMovies
-          variableMovies={this.state.variableMovies}
-          showUpdateForm={this.showUpdateForm}
-          userAddWatch={this.userAddWatch}
-        />
+       
 
         <StaticData
           moviesBackEndArray={this.state.moviesBackEndArray}
           showUpdateForm={this.showUpdateForm}
           addWatch={this.addWatch}
+          
         />
+
+ { <UserMovies
+          variableMovies={this.state.variableMovies}
+          showUpdateForm={this.showUpdateForm}
+          userAddWatch={this.userAddWatch}
+        />}
 
         <UpdateForm
           show={this.state.show}
@@ -255,6 +265,11 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
           handleClose={this.handleClose}
           updateComment={this.updateComment}
         />
+
+        
+
+
+
       </div>
     );
   }

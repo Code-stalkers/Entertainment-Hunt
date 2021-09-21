@@ -1,134 +1,3 @@
-// import React, { Component } from 'react'
-// import './home.scss'
-// import Carousel from 'react-bootstrap/Carousel'
-// import { Card, Button } from 'react-bootstrap/';
-// import CardGroup from 'react-bootstrap/CardGroup'
-// import { Link } from 'react-router-dom';
-// import { MDBBtn } from 'mdb-react-ui-kit';
-
-// class HomePage extends Component {
-
-//     render() {
-
-//         return (
-//             <>
-
-//                 <div>
-//                     <Carousel className="carosel">
-//                         <Carousel.Item interval={800}>
-//                             <img style={{ height: 'px' }}
-//                                 className="d-block w-100 "
-//                                 src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80"
-//                                 alt="MOVIES"
-//                             />
-//                             <Carousel.Caption>
-//                                 <h3>MOVIES</h3>
-
-//                             </Carousel.Caption>
-//                         </Carousel.Item>
-//                         <Carousel.Item interval={800}>
-//                             <img
-//                                 className="d-block w-100 "
-//                                 src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
-//                                 alt="GAMES"
-//                             />
-//                             <Carousel.Caption>
-//                                 <h3>GAMES</h3>
-
-//                             </Carousel.Caption>
-//                         </Carousel.Item>
-//                         <Carousel.Item interval={800}>
-//                             <img
-//                                 className="d-block w-100 "
-//                                 src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
-//                                 alt="cryptocurrencies"
-//                             />
-//                             <Carousel.Caption>
-//                                 <h3>cryptocurrencies</h3>
-
-//                             </Carousel.Caption>
-//                         </Carousel.Item>
-//                     </Carousel>
-
-//                 </div>
-//                 <div>
-
-
-//                     <CardGroup style={{ gap: "50px", margin: "50px" }}>
-//                         <Card className="Yousef-card">
-//                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdmllc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/100px160" />
-//                             <Card.Body>
-//                                 <Card.Title>MOVIES</Card.Title>
-//                                 <Card.Text>
-//                                     Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. They can help us to better understand our own lives, the lives of those around us and even how our society and culture operate.
-//                                 </Card.Text>
-//                             </Card.Body>
-//                             <Card.Footer>
-//                                 <Link to="/movie">
-//                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-//                                         <span>Visit Page</span>
-//                                     </MDBBtn>
-//                                 </Link>
-
-//                                 {/* <Button>Go to details</Button> */}
-
-//                             </Card.Footer>
-//                         </Card>
-//                         <Card className="Yousef-card">
-//                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80/100px160" />
-//                             <Card.Body>
-//                                 <Card.Title>GAMES</Card.Title>
-//                                 <Card.Text>
-//                                     Studies have shown that playing video games regularly may increase gray matter in the brain and boost brain connectivity. (Gray matter is associated with muscle control, memories, perception, and spatial navigation.)
-//                                 </Card.Text>
-//                             </Card.Body>
-//                             <Card.Footer>
-//                                 <Link to="/game">
-//                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-//                                         <span>Visit Page</span>
-//                                     </MDBBtn>
-//                                 </Link>
-
-//                             </Card.Footer>
-//                         </Card>
-//                         <Card className="Yousef-card">
-//                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80/100px160" />
-//                             <Card.Body>
-//                                 <Card.Title>cryptocurrencies</Card.Title>
-//                                 <Card.Text>
-//                                     A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward.
-//                                 </Card.Text>
-//                             </Card.Body>
-//                             <Card.Footer>
-//                                 <Link to="/crypto">
-//                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-//                                         <span>Visit Page</span>
-//                                     </MDBBtn>
-//                                 </Link>
-//                             </Card.Footer>
-//                         </Card>
-//                     </CardGroup>
-
-//                 </div>
-//                 <div>
-
-//                 </div>
-//                 <div style={{ textAlign: 'center' }} className="home">
-//                     Entertainment is an online database of information related to films, television programs,<br /> home videos,
-//                     video games, and streaming content online – including cast, <br />
-//                     production crew and personal biographies,
-//                     plot summaries, trivia, ratings.
-//                 </div>
-//                 <br /><br /><br /><br /><br /><br />
-
-
-//             </>
-//         )
-//     }
-// }
-
-// export default HomePage;
-
 
 import React from 'react';
 // import OurImages from './src/YousefComponents/OurImages'
@@ -137,105 +6,14 @@ import './Home.css';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
+import { Link } from 'react-router-dom';
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 export default function App() {
 
 
     return (
         <div className="app">
-
-            <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
-                <div class="container text-light">
-                    <div class="w-100 d-flex justify-content-between">
-                        <div>
-                            <i class="fa fa-envelope mx-2"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="#">info@company.com</a>
-                            <i class="fa fa-phone mx-2"></i>
-                            <a class="navbar-sm-brand text-light text-decoration-none" href="#">010-000-0000</a>
-                        </div>
-                        <div>
-                            <a class="text-light" href="#" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
-                            <a class="text-light" href="#" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                            <a class="text-light" href="#" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                            <a class="text-light" href="#" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <nav class="navbar navbar-expand-lg navbar-light shadow">
-                <div class="container d-flex justify-content-between align-items-center">
-
-                    <a class="navbar-brand text-success logo h1 align-self-center" href="#">
-                        Jassa
-                    </a>
-
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                        <div class="flex-fill">
-                            <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/game">games</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="movie">movies</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/crypto">crypto</a>
-                                </li>
-                            </ul>                           
-                        </div>
-                        <div class="navbar align-self-center d-flex">
-                            <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ..." />
-                                    <div class="input-group-text">
-                                        <i class="fa fa-fw fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
-                                <i class="fa fa-fw fa-search text-dark mr-2"></i>
-                            </a>
-                            <a class="nav-icon position-relative text-decoration-none" href="#">
-                                <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                                <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
-                            </a>
-                            <a class="nav-icon position-relative text-decoration-none" href="#">
-                                <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                                <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </nav>
-
-            <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="w-100 pt-1 mb-5 text-right">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                        <div class="input-group mb-2">
-                            <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ..." />
-                            <button type="submit" class="input-group-text bg-success text-light">
-                                <i class="fa fa-fw fa-search text-white"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
-
 
             <div id="template-mo-jassa-hero-carousel" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
@@ -248,14 +26,14 @@ export default function App() {
                         <div class="container">
                             <div class="row p-5">
                                 <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                                    <img class="img-fluid" src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80" alt="" />
+                                    <img class="img-fluid" src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80" width="640" height="360" alt="" />
                                 </div>
                                 <div class="col-lg-6 mb-0 d-flex align-items-center">
                                     <div class="text-align-left align-self-center">
                                         {/* <h1 class="h1 text-success"></h1> */}
                                         <h1 class="h1">Movies</h1>
                                         <p>
-                                        Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. They can help us to better understand our own lives, the lives of those around us and even how our society and culture operate.
+                                            Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. They can help us to better understand our own lives, the lives of those around us and even how our society and culture operate.
                                         </p>
                                     </div>
                                 </div>
@@ -273,7 +51,7 @@ export default function App() {
                                         {/* <h1 class="h1">Lorem Ipsum</h1> */}
                                         <h1 class="h1">GAMES</h1>
                                         <p>
-                                        Studies have shown that playing video games regularly may increase gray matter in the brain and boost brain connectivity. (Gray matter is associated with muscle control, memories, perception, and spatial navigation.)
+                                            Studies have shown that playing video games regularly may increase gray matter in the brain and boost brain connectivity. (Gray matter is associated with muscle control, memories, perception, and spatial navigation.)
                                         </p>
                                     </div>
                                 </div>
@@ -291,7 +69,7 @@ export default function App() {
                                         {/* <h1 class="h1">Lorem Ipsum</h1> */}
                                         <h1 class="h1">CRYPTOCURRENCY</h1>
                                         <p>
-                                        A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward.
+                                            A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward.
                                         </p>
                                     </div>
                                 </div>
@@ -306,52 +84,16 @@ export default function App() {
                     <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
-
             <section class="container py-5">
-                <div class="row text-center pt-3">
-                    <div class="col-lg-6 m-auto">
-                        <h1 class="h1">Categories of The Month</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExOz4MTqiLkN28ab8pDFz1cU6oxlR_mQdxTqjGVH-ZB18m1Xm7ZbGMCasloX-HoA_HCuf_Xu4ccbFh9jq58SU4&_nc_ohc=gSBcvc5oIkcAX9lGqEh&_nc_ht=scontent.famm11-1.fna&oh=0e29bec682a314e9a27d957c3267224c&oe=616DC538" class="rounded-circle img-fluid border" /></a>
-                        <h5 class="text-center mt-3 mb-3">AHMAD</h5>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">YOUSEF</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/170748298_10221712234167649_2359846898020945130_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFJ7S-dgj7tymrZLy-KN-c-L6NYbYJNHGovo1htgk0casaDLxKkCE1lU3jLjevfRLi-Rh6OCYgQG_pCNCnzHViI&_nc_ohc=fiqnnmICgsoAX_65WTv&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=d9601583a66eb19be751825959c76797&oe=616E9BFD" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">SUHAIB</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=BJjc-biFydIAX_IfOK9&_nc_ht=scontent.famm10-1.fna&oh=46b802606eb9788b0df6e856b23354d9&oe=6170D23D" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">MOHAMMAD</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-light">
                 <div class="container py-5">
                     <div class="row text-center py-3">
                         <div class="col-lg-6 m-auto">
-                            <h1 class="h1">Featured Product</h1>
+                            <h1 class="h1">OUR SERVICES</h1>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Entertainment is an online database of information related to films, television programs,home videos,
+                                video games, and streaming content online – including cast,
+                                production crew and personal biographies,
+                                plot summaries, trivia, ratings.
                             </p>
                         </div>
                     </div>
@@ -359,10 +101,10 @@ export default function App() {
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdmllc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
+                                    {/* <ul class="list-unstyled d-flex justify-content-between">
                                         <li>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
@@ -371,46 +113,56 @@ export default function App() {
                                             <i class="text-muted fa fa-star"></i>
                                         </li>
                                         <li class="text-muted text-right">$240.00</li>
-                                    </ul>
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                    </ul> */}
+                                    <a href="#" class="h2 text-decoration-none text-dark">MOVIES PAGE</a> <br /><br />
                                     <p class="card-text">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                                     </p>
-                                    <p class="text-muted">Reviews (24)</p>
+                                    <Link to="/movie">
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (24)</p> */}
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_02.jpg" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
-                                        <li>
-                                            <i class="text-warning fa fa-star"></i>
+                                    {/* <ul class="list-unstyled d-flex justify-content-between"> */}
+                                    {/* <li> */}
+                                    {/* <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-muted fa fa-star"></i>
-                                            <i class="text-muted fa fa-star"></i>
-                                        </li>
-                                        <li class="text-muted text-right">$480.00</li>
-                                    </ul>
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                            <i class="text-muted fa fa-star"></i> */}
+                                    {/* </li> */}
+                                    {/* <li class="text-muted text-right">$480.00</li> */}
+                                    {/* </ul> */}
+                                    <a href="#" class="h2 text-decoration-none text-dark">GAMES PAGE</a><br /><br />
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
-                                    </p>
-                                    <p class="text-muted">Reviews (48)</p>
+                                    </p><br />
+                                    <Link to="/game">
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (48)</p> */}
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 mb-4">
                             <div class="card h-100">
                                 <a href="#">
-                                    <img src="https://therichpost.com/wp-content/uploads/2021/05/feature_prod_03.jpg" class="card-img-top" alt="..." />
+                                    <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80/100px160" class="card-img-top" alt="..." />
                                 </a>
                                 <div class="card-body">
-                                    <ul class="list-unstyled d-flex justify-content-between">
+                                    {/* <ul class="list-unstyled d-flex justify-content-between">
                                         <li>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
@@ -419,111 +171,74 @@ export default function App() {
                                             <i class="text-warning fa fa-star"></i>
                                         </li>
                                         <li class="text-muted text-right">$360.00</li>
-                                    </ul>
-                                    <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
+                                    </ul> */}
+                                    <a href="#" class="h2 text-decoration-none text-dark">CRYPTO PAGE</a><br /><br />
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
-                                    </p>
-                                    <p class="text-muted">Reviews (74)</p>
+                                    </p><br />
+                                    <Link to="/crypto">
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
+                                    </Link>
+                                    {/* <p class="text-muted">Reviews (74)</p> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <footer class="bg-dark" id="tempaltemo_footer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-4 pt-5">
-                            <h2 class="h2 text-success border-bottom pb-3 border-light logo">Jassa Shop</h2>
-                            <ul class="list-unstyled text-light footer-link-list">
-                                <li>
-                                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                                    India
-                                </li>
-                                <li>
-                                    <i class="fa fa-phone fa-fw"></i>
-                                    <a class="text-decoration-none" href="#">000-000-0000</a>
-                                </li>
-                                <li>
-                                    <i class="fa fa-envelope fa-fw"></i>
-                                    <a class="text-decoration-none" href="#">info@company.com</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 pt-5">
-                            <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                            <ul class="list-unstyled text-light footer-link-list">
-                                <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                                <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                                <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                                <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                                <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                                <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                                <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 pt-5">
-                            <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                            <ul class="list-unstyled text-light footer-link-list">
-                                <li><a class="text-decoration-none" href="#">Home</a></li>
-                                <li><a class="text-decoration-none" href="#">About Us</a></li>
-                                <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
-                                <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                                <li><a class="text-decoration-none" href="#">Contact</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="row text-light mb-4">
-                        <div class="col-12 mb-3">
-                            <div class="w-100 my-3 border-top border-light"></div>
-                        </div>
-                        <div class="col-auto me-auto">
-                            <ul class="list-inline text-left footer-icons">
-                                <li class="list-inline-item border border-light rounded-circle text-center">
-                                    <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                                </li>
-                                <li class="list-inline-item border border-light rounded-circle text-center">
-                                    <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
-                                </li>
-                                <li class="list-inline-item border border-light rounded-circle text-center">
-                                    <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
-                                </li>
-                                <li class="list-inline-item border border-light rounded-circle text-center">
-                                    <a class="text-light text-decoration-none" target="_blank" href="#"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-auto">
-                            <label class="sr-only" for="subscribeEmail">Email address</label>
-                            <div class="input-group mb-2">
-                                <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address" />
-                                <div class="input-group-text btn-success text-light">Subscribe</div>
-                            </div>
-                        </div>
+            <section class="bg-light">
+                <div class="row text-center pt-3">
+                    <div class="col-lg-6 m-auto">
+                        <h1 class="h1">OUR TEAM</h1>
+                        <p>
+                            We're a Group of 5 Web-Developers who made this website for the sake of enjoyment
+                        </p>
                     </div>
                 </div>
+                <div id="images" class="row">
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExOz4MTqiLkN28ab8pDFz1cU6oxlR_mQdxTqjGVH-ZB18m1Xm7ZbGMCasloX-HoA_HCuf_Xu4ccbFh9jq58SU4&_nc_ohc=gSBcvc5oIkcAX9lGqEh&_nc_ht=scontent.famm11-1.fna&oh=0e29bec682a314e9a27d957c3267224c&oe=616DC538" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h5 class="text-center mt-3 mb-3">AHMAD</h5>
 
-                <div class="w-100 bg-black py-3">
-                    <div class="container">
-                        <div class="row pt-2">
-                            <div class="col-12">
-                                <p class="text-left text-light">
-                                    Copyright &copy; 2021 Company Name
-                                    | Designed by <a rel="sponsored" href="#" target="_blank">Jassa</a>
-                                </p>
-                            </div>
-                        </div>
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">YOUSEF</h2>
+
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/170748298_10221712234167649_2359846898020945130_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFJ7S-dgj7tymrZLy-KN-c-L6NYbYJNHGovo1htgk0casaDLxKkCE1lU3jLjevfRLi-Rh6OCYgQG_pCNCnzHViI&_nc_ohc=fiqnnmICgsoAX_65WTv&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=d9601583a66eb19be751825959c76797&oe=616E9BFD" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">SUHAIB</h2>
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=BJjc-biFydIAX_IfOK9&_nc_ht=scontent.famm10-1.fna&oh=46b802606eb9788b0df6e856b23354d9&oe=6170D23D" class="rounded-circle img-fluid border" /><div id="fontss" class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">MOHAMMAD</h2>
+
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+
                     </div>
                 </div>
+            </section>
 
-            </footer>
+
+
         </div>
     );
 }
