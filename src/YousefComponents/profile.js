@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-import Update from './suhaibComponents/Gmaetoprofile'
 import Container from 'react-bootstrap/Container';
 export class Profile extends Component {
     constructor(props) {
@@ -17,7 +16,7 @@ export class Profile extends Component {
         return (
 
             <Container>
-                    {/* <Update/> */}
+                     
                 <Row  className="g-4" style={{ margin: '2% 30%' ,width: '400px' }}>
                     {Array.from({ length: 1 }).map((_, idx) => (
                         <Col>

@@ -39,36 +39,36 @@ class Update extends React.Component {
 
     }
 
-    showUpdateForm = (item) => {
-        this.setState({
-            show: true,
-            Title: item.Title,
-            Year: item.Year,
-            imdbID: item.imdbID,
-            Poster: item.Poster,
-            Type: item.Type,
-            filmId: item._id,
-        });
-    };
+    // showUpdateForm = (item) => {
+    //     this.setState({
+    //         show: true,
+    //         Title: item.Title,
+    //         Year: item.Year,
+    //         imdbID: item.imdbID,
+    //         Poster: item.Poster,
+    //         Type: item.Type,
+    //         filmId: item._id,
+    //     });
+    // };
 
-    updateComment = (event) => {
-        event.preventDefault();
-        const obj = {
-            comment: event.target.comment.value,
-            filmId: this.state.filmId};
-            console.log(obj.comment ,'comment')
-        axios.put(`http://localhost:3001/updateComment/${this.state.filmId}`, obj)
-            .then(result => {
-                this.setState({
+    // updateComment = (event) => {
+    //     event.preventDefault();
+    //     const obj = {
+    //         comment: event.target.comment.value,
+    //         filmId: this.state.filmId};
+    //         console.log(obj.comment ,'comment')
+    //     axios.put(`http://localhost:3001/updateComment/${this.state.filmId}`, obj)
+    //         .then(result => {
+    //             this.setState({
 
-                    moviesBackEndArray: result.data,
-                    show: false
-                })
-            })
-            .catch(err => {
-                console.log('error in updating the data');
-            })
-    }
+    //                 moviesBackEndArray: result.data,
+    //                 show: false
+    //             })
+    //         })
+    //         .catch(err => {
+    //             console.log('error in updating the data');
+    //         })
+    // }
 
     render() {
         return (
@@ -81,10 +81,10 @@ class Update extends React.Component {
 
                         <p>{item.Title}</p>)
                 })}
-                {this.state.Array.map(item => {
+                {/* {this.state.Array.map(item => {
                     return (
                         <Profile2 showUpdateForm={this.updateComment} />)
-                })}
+                })} */}
 
 
             </>

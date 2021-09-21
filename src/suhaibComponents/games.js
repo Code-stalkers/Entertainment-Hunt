@@ -6,25 +6,88 @@ import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import { Notification } from 'rsuite';
 class Game extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
 
         }
     }
 
-     open= function () {
-        Notification.open({
-          title: 'added',
-          duration: 20000,
-        //   description: <Paragraph style={{ width: 320 }} rows={2} />
-        });
-      }
-
+    // open = function () {
+    //     Notification.open({
+    //         title: 'added',
+    //         duration: 20000,
+    //         //   description: <Paragraph style={{ width: 320 }} rows={2} />
+    //     });
+    // }
     render() {
         return (
             <>
-                <Container>
+
+
+<Container >
+                <Row xs={1} md={3} className="g-4">
+
+                    {this.props.favGamesArr.map(item => {
+
+                        return (
+                            <Col>
+                                <Container >
+                                    {['Dark ',].map((variant, idx) => (
+                                        <Card bg={variant.toLowerCase()}
+                                            key={idx}
+                                            text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+                                            style={{ width: '18rem' }}
+                                            className="mb-2" variant="top" border="danger" style={{ width: '18rem', height: '31rem' ,marginLift :'10px' }}>
+
+                                            <Card.Img style={{ width: '17.9rem', height: '19rem' }} variant="top" src={item.Poster} />
+                                            <Card.Body>
+                                                <Card.Title style={{ fontFamily: 'Cursive' }}>{item.Title}</Card.Title>
+                                                <Card.Text style={{ fontFamily: 'Cursive' }}>
+                                                    <span> {item.Year}   </span>
+
+                                                    <span> {item.Type}   </span>
+                                                </Card.Text>
+
+                                                <Button style={{
+                                                    position: 'absolute', left: '0px', bottom: '0px', marginLeft: '2rem',
+                                                    fontFamily: 'Impact, fantasy'}} onClick={() => this.props.addGameHandler(item)} size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png' />  Add to favorite</Button>
+                                            </Card.Body>
+
+                                        </Card>))
+
+                                    }
+                                </Container>
+                            </Col>
+
+
+                        );
+
+                    })}
+
+                </Row>
+                </Container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <Container>
                     <Row xs={1} md={3} className="g-4" className="justify-content-between" >
                         {this.props.favGamesArr.map(item => {
                             return (
@@ -44,16 +107,6 @@ class Game extends Component {
 
 
 
-
-                                    {/* <GamesCard handleShow={this.props.handleShow}
-                        Title={item.Title}
-                            Poster={item.Poster}
-                            Type={item.Type}
-                            Year={item.Year}
-                            
-                        /> */}
-
-
                                 </Col>
 
                             );
@@ -61,7 +114,27 @@ class Game extends Component {
                         })
                         }
                     </Row>
-                </Container>
+                </Container> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </>
 
         );

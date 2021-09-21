@@ -6,11 +6,7 @@ import LoginButton from './loginButton';
 import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import ModalInfo from './modal'
-
 import { MDBBtn } from 'mdb-react-ui-kit';
-
-
-
 export class NavBar extends Component {
     constructor(props) {
         super(props);
@@ -26,7 +22,15 @@ export class NavBar extends Component {
         this.setState({
             show: false, })}
 
-
+            function (user, context, callback) {
+                const isAuthenticated = this.props.auth0
+                if(isAuthenticated.authorization.roles.includes('Admin')) {
+                    isAuthenticated.redirect = {
+                    url: "http://localhost:3001/" ||"http://localhost:3001/crypto"||"http://localhost:3001/movie" ||"http://localhost:3001/game"
+                  };
+                }
+                return callback(null, user, context);
+              }
 
 
     render() {
