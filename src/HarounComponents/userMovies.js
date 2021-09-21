@@ -30,8 +30,16 @@ class UserMovies extends Component {
 
   render() {
     return (
+
+      
+
+
       <div>
+
+        
         <Container >
+   
+          
           <Row xs={1} md={3} className="g-4">
 
 {this.props.variableMovies.map(item=>{
