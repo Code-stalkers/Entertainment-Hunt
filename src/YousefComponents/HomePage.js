@@ -84,44 +84,7 @@ export default function App() {
                     <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
-
             <section class="container py-5">
-                <div class="row text-center pt-3">
-                    <div class="col-lg-6 m-auto">
-                        <h1 class="h1">Categories of The Month</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExOz4MTqiLkN28ab8pDFz1cU6oxlR_mQdxTqjGVH-ZB18m1Xm7ZbGMCasloX-HoA_HCuf_Xu4ccbFh9jq58SU4&_nc_ohc=gSBcvc5oIkcAX9lGqEh&_nc_ht=scontent.famm11-1.fna&oh=0e29bec682a314e9a27d957c3267224c&oe=616DC538" class="rounded-circle img-fluid border" /></a>
-                        <h5 class="text-center mt-3 mb-3">AHMAD</h5>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">YOUSEF</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/170748298_10221712234167649_2359846898020945130_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFJ7S-dgj7tymrZLy-KN-c-L6NYbYJNHGovo1htgk0casaDLxKkCE1lU3jLjevfRLi-Rh6OCYgQG_pCNCnzHViI&_nc_ohc=fiqnnmICgsoAX_65WTv&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=d9601583a66eb19be751825959c76797&oe=616E9BFD" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">SUHAIB</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-
-                    <div class="col-12 col-md-4 p-5 mt-3">
-                        <a href="#"><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=BJjc-biFydIAX_IfOK9&_nc_ht=scontent.famm10-1.fna&oh=46b802606eb9788b0df6e856b23354d9&oe=6170D23D" class="rounded-circle img-fluid border" /></a>
-                        <h2 class="h5 text-center mt-3 mb-3">MOHAMMAD</h2>
-                        <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="bg-light">
                 <div class="container py-5">
                     <div class="row text-center py-3">
                         <div class="col-lg-6 m-auto">
@@ -156,9 +119,9 @@ export default function App() {
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
                                     </p>
                                     <Link to="/movie">
-                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-                                         <span>Visit Page</span>
-                                     </MDBBtn>
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
                                     </Link>
                                     {/* <p class="text-muted">Reviews (24)</p> */}
                                 </div>
@@ -171,23 +134,23 @@ export default function App() {
                                 </a>
                                 <div class="card-body">
                                     {/* <ul class="list-unstyled d-flex justify-content-between"> */}
-                                        {/* <li> */}
-                                            {/* <i class="text-warning fa fa-star"></i>
+                                    {/* <li> */}
+                                    {/* <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-warning fa fa-star"></i>
                                             <i class="text-muted fa fa-star"></i>
                                             <i class="text-muted fa fa-star"></i> */}
-                                        {/* </li> */}
-                                        {/* <li class="text-muted text-right">$480.00</li> */}
+                                    {/* </li> */}
+                                    {/* <li class="text-muted text-right">$480.00</li> */}
                                     {/* </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">Lorem Ipsum</a>
                                     <p class="card-text">
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
                                     </p>
                                     <Link to="/game">
-                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-                                         <span>Visit Page</span>
-                                     </MDBBtn>
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
                                     </Link>
                                     {/* <p class="text-muted">Reviews (48)</p> */}
                                 </div>
@@ -214,9 +177,9 @@ export default function App() {
                                         Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
                                     </p>
                                     <Link to="/crypto">
-                                     <MDBBtn className='mx-2' color='dark' className="is-rounded">
-                                         <span>Visit Page</span>
-                                     </MDBBtn>
+                                        <MDBBtn className='mx-2' color='dark' className="is-rounded">
+                                            <span>Visit Page</span>
+                                        </MDBBtn>
                                     </Link>
                                     {/* <p class="text-muted">Reviews (74)</p> */}
                                 </div>
@@ -225,6 +188,58 @@ export default function App() {
                     </div>
                 </div>
             </section>
+            <section class="bg-light">
+                <div class="row text-center pt-3">
+                    <div class="col-lg-6 m-auto">
+                        <h1 class="h1">OUR TEAM</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+                <div id="images" class="row">
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExOz4MTqiLkN28ab8pDFz1cU6oxlR_mQdxTqjGVH-ZB18m1Xm7ZbGMCasloX-HoA_HCuf_Xu4ccbFh9jq58SU4&_nc_ohc=gSBcvc5oIkcAX9lGqEh&_nc_ht=scontent.famm11-1.fna&oh=0e29bec682a314e9a27d957c3267224c&oe=616DC538" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h5 class="text-center mt-3 mb-3">AHMAD</h5>
+
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">YOUSEF</h2>
+
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/170748298_10221712234167649_2359846898020945130_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFJ7S-dgj7tymrZLy-KN-c-L6NYbYJNHGovo1htgk0casaDLxKkCE1lU3jLjevfRLi-Rh6OCYgQG_pCNCnzHViI&_nc_ohc=fiqnnmICgsoAX_65WTv&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=d9601583a66eb19be751825959c76797&oe=616E9BFD" class="rounded-circle img-fluid border" /><div class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">SUHAIB</h2>
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+                    </div>
+
+                    <div id="example" class="col-12 col-md-4 p-5 mt-3">
+                        <a><img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=BJjc-biFydIAX_IfOK9&_nc_ht=scontent.famm10-1.fna&oh=46b802606eb9788b0df6e856b23354d9&oe=6170D23D" class="rounded-circle img-fluid border" /><div id="fontss" class="content"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div></a>
+                        <h2 class="h5 text-center mt-3 mb-3">MOHAMMAD</h2>
+
+
+                        {/* <p class="text-center"><a class="btn btn-success">ABOUT ME</a></p> */}
+
+                    </div>
+                </div>
+            </section>
+
+
 
         </div>
     );
