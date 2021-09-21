@@ -53,7 +53,7 @@ class Movies extends Component {
       {
       [
   
-  'Danger      ',
+  'Dark      ',
   
   
  
