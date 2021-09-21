@@ -14,6 +14,7 @@ import {
 import UserMovies from "./userMovies";
 import UpdateForm from "./updateForm";
 
+
 class Movies extends Component {
   constructor(props) {
     super(props);
