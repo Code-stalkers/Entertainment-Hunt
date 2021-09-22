@@ -15,11 +15,12 @@
 
     .carousel-item{
         height: 500px;
-        
+        width: 100%;
 
         img{
             height: 100%;
-            object-fit: cover;
+            object-fit:cover;
+            
         }
     }
 }
