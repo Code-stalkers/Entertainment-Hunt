@@ -47,16 +47,12 @@ class UserMovies extends Component {
     return(
       <Col>
 
-
-
-
 {
       [
   
   'Dark ',
   
   
- 
 ].map((variant, idx) => (
       
 
@@ -94,6 +90,7 @@ class UserMovies extends Component {
 })}
  
  </Row>
+
  </Container>
       </div>
     );
