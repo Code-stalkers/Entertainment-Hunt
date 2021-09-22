@@ -92,7 +92,7 @@ export class footer extends Component {
 
                         <div class="col-md-4 pt-5">
                             <h2 class="h2 text-success border-bottom pb-3 border-light logo">
-                            <img style={{objectFit:"cover", width:"200px", height:"200px"}} src={logo} />
+                            FUNTER
 
                             </h2>
                             <ul class="list-unstyled text-light footer-link-list">
