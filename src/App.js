@@ -8,7 +8,7 @@ import Suhaib from './suhaibComponents/suhaibMain'
 import Home from './YousefComponents/HomePage';
 import { withAuth0 } from '@auth0/auth0-react';
 import MarketCap from './ahmadComponents/marketCap';
-// import Profile from './YousefComponents/profile';
+import Profile from './YousefComponents/profile';
 
 
 import {
@@ -25,10 +25,11 @@ class App extends Component {
 
       <div>
 
-        <Header />
+      
 
         {/* <Navbar/> */}
         <Router>
+        <Header />
           <Switch>
 
 
@@ -36,7 +37,8 @@ class App extends Component {
             <Route exact path="/movie">  <Movies />  </Route>
             <Route exact path="/">         <Home />  </Route>
             <Route path="/crypto">   <MarketCap />  </Route>
-            {/* <Route path="/Profile">   <Profile />   </Route> */}
+            <Route path="/Profile">   <Profile />   </Route>
+
 
           </Switch>
 
