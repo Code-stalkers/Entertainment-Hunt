@@ -163,26 +163,52 @@ class Suhaib extends Component {
 
               {this.state.staticArr.map(item => {
                 return (
-                  <Carousel.Item>
-                    <img
-
-                      src={item.Poster}
-                      alt="First slide"
-                      style={{ width: '24rem', height: '24rem', borderRadius: '20px', objectFit: 'fill' }}
-                    />
-                    <Carousel.Caption>
-                      <h5 style={{ color: '#FFFFFF' }}  >{item.Title}</h5>
-                    </Carousel.Caption>
+                  <Carousel.Item >
+                          <h5 style={{ color: "#000" }, {fontFamily:'cursive'}}> 
+                  
+                  {item.Title}  </h5>
+                  <img
+                    src={item.Poster}
+                    alt="First slide"
+                    style={{
+                      width: "28rem",
+                      height: "28rem",
+                      borderRadius: "20px",
+                      objectFit: "fill",
+                    }}
+                  />
                   </Carousel.Item>
 
                 )
               })}
             </Carousel> </center>
+             <br/>
+            
+
+             <br/>
+            
+
+             <br/>
+            
 
 
           <Row className="justify-content-between">
             <Game favGamesArr={this.state.gameData} addGameHandler={this.addGameHandler} />
           </Row>
+           <br/>
+            
+
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+            
+
+
         </div>
       </>
     );
