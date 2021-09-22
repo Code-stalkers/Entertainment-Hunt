@@ -35,9 +35,12 @@ class UserMovies extends Component {
 
 
       <div>
+         <br/>
+                   
+
 
         
-        <Container >
+        <Container style={{marginTop:'550px'}} >
    
           
           <Row xs={1} md={3} className="g-4">
@@ -60,7 +63,7 @@ class UserMovies extends Component {
    key={idx}
    text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
    style={{ width: '18rem' }}
-   className="mb-2" variant="top" border="danger" style={{ width: '18rem' ,height:'31rem' }}>
+   className="mb-2" variant="top" border="danger" style={{ width: '18rem' ,height:'31rem',textAlign: 'center' }}>
   
 
             
@@ -73,9 +76,9 @@ class UserMovies extends Component {
     <span> {item.Type}   </span>
     </Card.Text>
 
-    <Button  style={{position: 'absolute', left: '0px', bottom: '0px', marginLeft:'2rem',
-  fontFamily: 'Impact, fantasy'
-  }} onClick={()=> this.props.userAddWatch(item)}   size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
+    <Button  style={{ 
+  fontFamily: 'Roboto', fontSize: '18px'
+  }} onClick={()=> this.props.userAddWatch(item)}     variant="success"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
   </Card.Body>
   
   </Card> ))
@@ -92,7 +95,23 @@ class UserMovies extends Component {
  </Row>
 
  </Container>
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+                    <br/>
+                    <br/>
+
       </div>
+
+
+
     );
   }
 }

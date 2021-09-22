@@ -85,8 +85,8 @@ import LogoutButton from './LogoutButton';
 import { withAuth0 } from '@auth0/auth0-react';
 import ModalInfo from './modal';
 import { MDBBtn } from 'mdb-react-ui-kit';
-
-
+import logo from './logo.png';
+import Button from "react-bootstrap";
 
 export class Header extends Component {
 
@@ -117,7 +117,7 @@ export class Header extends Component {
     render() {
         return (
 
-            <div>
+            <div >
 
 
                 {/* <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
@@ -140,10 +140,10 @@ export class Header extends Component {
             </nav> */}
 
                 <nav style={{ backgroundColor: "#212934" }} class="navbar navbar-expand-lg navbar-light shadow">
-                    <div class="container d-flex justify-content-between align-items-center">
+                    <div  class="container d-flex justify-content-between align-items-center">
 
-                        <a class="navbar-brand text-success logo h1 align-self-center" href="/">
-                            Fun-Hunter
+                        <a class="navbar-brand text-success logo h1 align-self-center" href="#">
+                       FUNTER
                         </a>
 
                         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,21 +154,21 @@ export class Header extends Component {
                             <div class="flex-fill">
                                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">Home</a>
+                                        <a class="nav-link" href="/">HOME</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/game">games</a>
+                                        <a class="nav-link" href="/game">GAMES</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="movie">movies</a>
+                                        <a class="nav-link" href="movie">MOVIES</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/crypto">crypto</a>
+                                        <a class="nav-link" href="/crypto">CRYPTO</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/profile">Profile</a>
+                                        <a class="nav-link" href="/profile">PROFILE</a>
                                     </li>
-
+                                    <LoginButton />
                                 </ul>
                             </div>
                             <div class="navbar align-self-center d-flex">
