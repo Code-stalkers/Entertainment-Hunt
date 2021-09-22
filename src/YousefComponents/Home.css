@@ -80,6 +80,7 @@ body, ul, li, p, a, label, input, div {
     filter: grayscale(100%);
     opacity: 0.5;
     transition: .5s;
+    margin-left:100px
   }
   .brand-img:hover {
     filter: grayscale(0%);
@@ -87,8 +88,9 @@ body, ul, li, p, a, label, input, div {
   }
   /* Carousel Hero */
   #template-mo-jassa-hero-carousel .carousel-indicators li {
-    margin-top: -50px;
+    margin-top: 60px;
     background-color: #59ab6e;
+    margin-left: 80px;
   }
   #template-mo-jassa-hero-carousel .carousel-control-next i,
   #template-mo-jassa-hero-carousel .carousel-control-prev i {
@@ -252,9 +254,9 @@ body, ul, li, p, a, label, input, div {
         }
         
         .card {
-            border-radius: 20px;
+            border-radius: 19px;
             background: #eeeeee;
-            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+            box-shadow: 20px 20px 60px #918d8d, -20px -20px 60px #585656;
             border: none
         }
         
@@ -266,28 +268,11 @@ body, ul, li, p, a, label, input, div {
         .card1 {
           border-radius: 20px;
           background: #eeeeee;
-          box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #aca5a5, -20px -20px 60px #777070;
           border: none
       }
-        .neo-button {
-            width: 40px;
-            height: 40px;
-            outline: 0 !important;
-            cursor: pointer;
-            color: #fff;
-            font-size: 15px;
-            border: none;
-            margin-right: 10px;
-            border-radius: 50%;
-            background: linear-gradient(145deg, #d6d6d6, #ffffff);
-            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
-        }
-        
-        .neo-button:active {
-            border-radius: 50%;
-            background: linear-gradient(145deg, #d6d6d6, #ffffff);
-            box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
-        }
+       
+    
         
         .fa-facebook {
             color: #3b5998
@@ -316,9 +301,9 @@ body, ul, li, p, a, label, input, div {
 
         #center{
         
-      display: inline-flex;
-      margin-left: 15%;
-      gap: 50px;
+         display: inline-flex;
+         margin-left: 15%;
+         gap: 60px;
         }
 
         .p1 {

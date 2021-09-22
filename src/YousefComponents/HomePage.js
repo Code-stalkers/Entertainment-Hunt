@@ -116,8 +116,7 @@ export default function App() {
                                     </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">MOVIES </a> <br /><br />
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
-                                    </p>
+                                    Movies affect many of us powerfully because the combined impact of images, music, dialogue, lighting, sound and special effects can elicit deep feelings and help us reflect on our lives. </p><br/>
                                     <Link to="/movie">
                                         <MDBBtn className='mx-2' color='dark' className="is-rounded">
                                             <span>Visit Page</span>
@@ -145,8 +144,7 @@ export default function App() {
                                     {/* </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">GAMES </a><br /><br />
                                     <p class="card-text">
-                                        Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum
-                                    </p><br />
+                                    games allow us to experience emotions that are closely related to the main factors of happiness. Thus, we play games because they make us happy.                                    </p><br /><br />
                                     <Link to="/game">
                                         <MDBBtn className='mx-2' color='dark' className="is-rounded">
                                             <span>Visit Page</span>
@@ -174,8 +172,9 @@ export default function App() {
                                     </ul> */}
                                     <a href="#" class="h2 text-decoration-none text-dark">CRYPTO </a><br /><br />
                                     <p class="card-text">
-                                        Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum.
-                                    </p><br />
+
+                                  
+Cryptocurrencies are digital assets people use as investments and for online purchases. You exchange real currency, like dollars, to buy “coins” or “tokens” of a certain kind of cryptocurrency..                                  </p><br />
                                     <Link to="/crypto">
                                         <MDBBtn className='mx-2' color='dark' className="is-rounded">
                                             <span>Visit Page</span>
@@ -243,7 +242,7 @@ export default function App() {
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
                                 <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" width="100" class="rounded-circle" />
-                                    <h3 class="mt-2">Yousef Obeidat</h3> <br/><span class="mt-1 clearfix">Graphics Designer</span> <small class="mt-4">I am an Graphics Designer working at google Inc at california,USA</small>
+                                    <h3 class="mt-2">Yousef Obeidat</h3> <br/><span class="mt-1 clearfix">Web-Developer</span> <small class="mt-4">I am a trainee as a Web Developer at LTUC Inc at AMMAN,JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
                             </div>
