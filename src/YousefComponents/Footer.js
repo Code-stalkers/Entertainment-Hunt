@@ -80,6 +80,7 @@
 
 
 import React, { Component } from 'react'
+import logo from './logo.png';
 
 export class footer extends Component {
   render() {
@@ -90,7 +91,10 @@ export class footer extends Component {
                     <div class="row">
 
                         <div class="col-md-4 pt-5">
-                            <h2 class="h2 text-success border-bottom pb-3 border-light logo">Fun-Hunter</h2>
+                            <h2 class="h2 text-success border-bottom pb-3 border-light logo">
+                            FUNTER
+
+                            </h2>
                             <ul class="list-unstyled text-light footer-link-list">
                                 <li>
                                     <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -110,9 +114,9 @@ export class footer extends Component {
                         <div class="col-md-4 pt-5">
                             <h2 class="h2 text-light border-bottom pb-3 border-light">Content</h2>
                             <ul class="list-unstyled text-light footer-link-list">
-                                <li><a class="text-decoration-none" href="#">MOVIES</a></li>
-                                <li><a class="text-decoration-none" href="#">GAMES</a></li>
-                                <li><a class="text-decoration-none" href="#">CRYPTO CURRENCIES</a></li>
+                                <li><a class="text-decoration-none" href="/movie">MOVIES</a></li>
+                                <li><a class="text-decoration-none" href="/game">GAMES</a></li>
+                                <li><a class="text-decoration-none" href="/crypto">CRYPTO CURRENCIES</a></li>
                                 {/* <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
                                 <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
                                 <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
@@ -125,7 +129,6 @@ export class footer extends Component {
                             <ul class="list-unstyled text-light footer-link-list">
                                 <li><a class="text-decoration-none" href="#">Home</a></li>
                                 <li><a class="text-decoration-none" href="#">About Us</a></li>
-                                <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
                                 <li><a class="text-decoration-none" href="#">FAQs</a></li>
                                 <li><a class="text-decoration-none" href="#">Contact</a></li>
                             </ul>

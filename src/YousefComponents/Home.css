@@ -20,7 +20,7 @@ body, ul, li, p, a, label, input, div {
     font-size: 22px !important;
   }
   /* General */
-  .logo { font-weight: 500 !important;}
+  .logo { font-weight: 700 !important;}
   .text-warning {  color: #ede861 !important;}
   .text-muted { color: #bcbcbc !important;}
   .text-success { color: #59ab6e !important;}
@@ -211,4 +211,116 @@ body, ul, li, p, a, label, input, div {
         transform: translateY(250px);
         -webkit-transform: translateY(250px);
       }
+      #b1{
+        position: absolute;
+        right: 100px;
+        top: 17px ;
 
+    
+      }
+
+#b2{
+  position: absolute;
+        right: 100px;
+        top: 17px ;}
+
+
+
+
+
+
+        /* Team Cards */
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans', sans-serif
+        }
+        
+        html,
+        body {
+            height: 100%
+        }
+        
+        body {
+            display: grid;
+            /* place-items: center; */
+            background: #eee
+        }
+        
+        .card {
+            border-radius: 20px;
+            background: #eeeeee;
+            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+            border: none
+        }
+        
+        .card1 img {
+            border-radius: 50%;
+            background: linear-gradient(145deg, #d6d6d6, #ffffff);
+            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+        }
+        .card1 {
+          border-radius: 20px;
+          background: #eeeeee;
+          box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
+          border: none
+      }
+        .neo-button {
+            width: 40px;
+            height: 40px;
+            outline: 0 !important;
+            cursor: pointer;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #d6d6d6, #ffffff);
+            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+        }
+        
+        .neo-button:active {
+            border-radius: 50%;
+            background: linear-gradient(145deg, #d6d6d6, #ffffff);
+            box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
+        }
+        
+        .fa-facebook {
+            color: #3b5998
+        }
+        
+        .fa-linkedin {
+            color: #0077b5
+        }
+        
+        .fa-google {
+            color: #dc4e41
+        }
+        
+        .fa-youtube {
+            color: #cd201f
+        }
+        
+        .fa-twitter {
+            color: #55acee
+        }
+        .row{
+          margin-bottom: 5%;
+        }
+
+
+
+        #center{
+        
+      display: inline-flex;
+      margin-left: 15%;
+      gap: 50px;
+        }
+
+        .p1 {
+          font-size:larger !important;
+        }

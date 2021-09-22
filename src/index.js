@@ -8,7 +8,7 @@ import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 ReactDOM.render(
 
   <Router>
-  <Auth0ProviderWithHistory
+  <Auth0Provider
    
   
     domain="dev-r5h2fhpc.us.auth0.com"
@@ -17,7 +17,7 @@ ReactDOM.render(
   >
     <App />
  
-  </Auth0ProviderWithHistory>
+  </Auth0Provider>
 </Router>,
   document.getElementById("root")
 );

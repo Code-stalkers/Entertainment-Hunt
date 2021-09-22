@@ -11,20 +11,40 @@ class Movies extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      fanFavorite :[],
     
     };
   }
+
+  componentDidMount = () => {
+    axios
+      .get(`http://localhost:3001/static`) 
+      .then((result) => {
+        this.setState({
+          fanFavorite: result.data,
+          
+        });
+        
+      })
+      .catch((err) => {
+        console.log("/error");
+      });
+     
+  };
 
  
 
   render() {
     return (
       <div>
+        <br />
+        <br />
+        
         
 
         <center>
 
-        <div  style={{backgroundColor:'#CDF3A2' , width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
+        <div  style={{  width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
         </div>
         </center>
         
@@ -37,7 +57,7 @@ class Movies extends Component {
        
           <Carousel
             variant="dark"
-            style={{ borderRadius: "20px", width: "60vw" }}
+            style={{ borderRadius: "20px", width: "29vw" ,float:'left',position:'absolute', left:'150px'}}
           >
             {this.props.moviesBackEndArray.map((item) => {
               return (
@@ -49,7 +69,7 @@ class Movies extends Component {
                     src={item.Poster}
                     alt="First slide"
                     style={{
-                      width: "48rem",
+                      width: "100%",
                       height: "28rem",
                       borderRadius: "20px",
                       objectFit: "fill",
@@ -57,102 +77,58 @@ class Movies extends Component {
                   />
                  
                   {/* <Carousel.Caption> */}
-                    <br/>
-                    <br/>
-                    <br/>
+                   
+                   
                  
+                  {/* </Carousel.Caption> */}
+                </Carousel.Item>
+                
+              );
+            })}
+          </Carousel>{" "}
+          
+        </center>
+
+        <center>
+          {" "}
+         
+      
+       
+          <Carousel
+
+            variant="dark"
+            style={{ borderRadius: "20px", width: "29vw" ,float:'right',position:'absolute', right:'220px',top:'490px'}}
+          >
+            {this.state.fanFavorite.map((item) => {
+              return (
+                <Carousel.Item interval={1000} >
+                     <h5 style={{ color: "#000" }, {fontFamily:'cursive'}}> 
+                  
+                  {item.Title}  </h5>
+                  <img
+                    src={item.Poster}
+                    alt="First slide"
+                    style={{
+                      width: "100%",
+                      height: "28rem",
+                      borderRadius: "20px",
+                      objectFit: "fill",
+                    }}
+                  />
+                 
+                  {/* <Carousel.Caption> */}
+                  <br/>
+                   
                   {/* </Carousel.Caption> */}
                 </Carousel.Item>
               );
             })}
           </Carousel>{" "}
-          <br/>
-        <br/>
+         
         </center>
-        <br/>
-        <br/>
-        <br/> 
-        <br/>
-        <br/>
-
-        {/* <center>
-
-        <div  style={{backgroundColor:'#CDF3A2' , width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
-        </div>
-        </center> */}
-        
-        
+      
 
         
-        
-
-
-
-        {/* <CardGroup> */}
-
-{/* 
-        <Container>
-          <Row xs={1} md={3} className="g-4">
-            {this.props.moviesBackEndArray.map((item, index) => {
-              return (
-                <Col>
-                  {["Dark      "].map((variant, idx) => (
-                    <Card
-                      bg={variant.toLowerCase()}
-                      key={idx}
-                      text={
-                        variant.toLowerCase() === "light" ? "dark" : "white"
-                      }
-                      style={{ width: "18rem" }}
-                      className="mb-2"
-                      variant="top"
-                      border="Warning"
-                      style={{ width: "18rem", height: "31rem" }}
-                    >
-                      <Card.Img
-                        style={{ width: "17.9rem", height: "19rem" }}
-                        variant="top"
-                        src={item.Poster}
-                        onClick={() => this.props.showUpdateForm(item)}
-                      />
-                      <Card.Body>
-                        <Card.Title style={{ fontFamily: "Cursive" }}>
-                          {item.Title}
-                        </Card.Title>
-                        <Card.Text style={{ fontFamily: "Cursive" }}>
-                          <span> {item.Year} </span>
-
-                          <span> {item.Type} </span>
-                        </Card.Text>
-
-                        <Button
-                          style={{
-                            position: "absolute",
-                            left: "0px",
-                            bottom: "0px",
-                            marginLeft: "2rem",
-                            fontFamily: "Impact, fantasy",
-                          }}
-                          onClick={() => this.props.addWatch(item)}
-                          size="lg"
-                          variant="warning"
-                        >
-                          {" "}
-                          <img
-                            height="30px"
-                            src="https://img.icons8.com/color/2x/plus.png"
-                          />{" "}
-                          Add to Watchlist
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  ))}
-                </Col>
-              );
-            })}
-          </Row>
-        </Container> */}
-        {/* </CardGroup> */}
       </div>
     );
   }
