@@ -18,7 +18,7 @@ class Movies extends Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/game?title=run`) 
+      .get(`http://localhost:3001/static`) 
       .then((result) => {
         this.setState({
           fanFavorite: result.data,
@@ -44,7 +44,7 @@ class Movies extends Component {
 
         <center>
 
-        <div  style={{backgroundColor:'#6ECB63' , width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
+        <div  style={{  width:'70%', height:'100px' ,marginleft:'25%',paddingTop:'25px',borderRadius:'25px' ,fontFamily:'sans-serif'}}> <h1>Most Popular Movies</h1>
         </div>
         </center>
         
@@ -95,12 +95,13 @@ class Movies extends Component {
       
        
           <Carousel
+
             variant="dark"
             style={{ borderRadius: "20px", width: "29vw" ,float:'right',position:'absolute', right:'220px',top:'490px'}}
           >
             {this.state.fanFavorite.map((item) => {
               return (
-                <Carousel.Item>
+                <Carousel.Item interval={1000} >
                      <h5 style={{ color: "#000" }, {fontFamily:'cursive'}}> 
                   
                   {item.Title}  </h5>
