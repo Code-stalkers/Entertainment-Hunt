@@ -6,9 +6,10 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { withAuth0 } from '@auth0/auth0-react';
-// import SuhaibModal from './Gmaetoprofile';
 import Carousel from 'react-bootstrap/Carousel'
 import { Col, Container, } from "react-bootstrap";
+
+
 class Suhaib extends Component {
 
   constructor(props) {
@@ -23,16 +24,28 @@ class Suhaib extends Component {
       Year: '',
       show: false,
       staticArr: []
+
     }
 
   }
+  handleClose = () => {
+    this.setState({
+      show: false,
+    });
+  };
 
+  handleShow = () => {
+
+    this.setState({
+      show: true,
+    });
+  };
   componentDidMount = async () => {
     const url = `http://localhost:3001/game?title=call`;
     axios
       .get(url)
       .then(result => {
-        console.log(result);
+
         this.setState({
           staticArr: result.data
         })
@@ -48,12 +61,12 @@ class Suhaib extends Component {
   getGameData = async (event) => {
     event.preventDefault()
     let title = event.target.movieTitle.value;
-    let year = parseInt(event.target.userYear.value);
-    const url = `http://localhost:3001/game?title=${title}&year=${year}`;
+   
+    const url = `http://localhost:3001/game?title=${title}`;
     axios
       .get(url)
       .then(result => {
-        console.log(result);
+        
         this.setState({
           gameData: result.data
         })
@@ -69,7 +82,6 @@ class Suhaib extends Component {
 
   }
   showUpdateForm = (item) => {
-    console.log(item)
     this.setState({
       show: true,
       Title: item.Title,
@@ -86,9 +98,9 @@ class Suhaib extends Component {
 
 
   addGameHandler = async (item) => {
+    this.handleShow()
     const { user } = this.props.auth0;
     const email = user.email;
-    console.log(email)
     let objEst = {
       Title: item.Title,
       Year: item.Year,
@@ -103,50 +115,37 @@ class Suhaib extends Component {
       favGamesArr: save.data
 
     })
-    console.log(this.state.favGamesArr, 'hi');
+   
   }
 
   render() {
     return (
       <>
-        <div style={{ padding: 20, backgroundColor: '##212934', height: '100%', width: '100%' }} >
+        <div style={{ displayFlex: 'inlineBlock' ,padding: 20, backgroundColor: '##212934', height: '100%', width: '100%' }} >
           <Container>
-            <Form onSubmit={this.getGameData}>
+            <Form onSubmit={this.getGameData} style={{ display: 'InlineFlex' ,padding: 20, height: '100%', width: '100%' }}  >
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridCity">
-                  <Form.Label style={{ color: 'black' }, { fontFamily: 'Cursive' }} >The Name of the game</Form.Label>
+                  <Form.Label style={{ color: 'black', fontFamily: 'Cursive' }} >The Name of the game</Form.Label>
+                  
                   <Form.Control
                     type="text"
                     name="movieTitle"
                     placeholder="Enter the Name of the game"
                   />
                 </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridState">
-                  <Form.Label style={{ color: 'black' }, { fontFamily: 'Cursive' }}>Year</Form.Label>
-                  <Form.Select
-                    defaultValue="Choose..."
-                    name="userYear"
-                    aria-label="Floating label select example"
-                  >
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                  </Form.Select>
-                </Form.Group>
-              </Row>
-              <Button variant="primary" type="submit">
+                <Col>
+                <Button variant="success" type="submit" style={{marginTop: '35px' }}  >
                 Search
               </Button>
+              </Col>
+              </Row>
             </Form>
           </Container>
 
           <br />
           <br />
-         
+
 
           <center>
 
@@ -159,11 +158,19 @@ class Suhaib extends Component {
           </center>
           <br />
           <center>
-            <Carousel variant="dark" style={{ borderRadius: '20px', width: "60vw" }}>
+       
+
+
+
+
+
+
+            <Carousel variant="dark" style={{ borderRadius: '20px', width: "80vw" }}>
 
               {this.state.staticArr.map(item => {
                 return (
                   <Carousel.Item >
+
                           <h5 style={{ color: "#000" }, {fontFamily:'cursive'}}> 
                   
                   {item.Title}  </h5>
@@ -171,42 +178,37 @@ class Suhaib extends Component {
                     src={item.Poster}
                     alt="First slide"
                     style={{
-                      width: "28rem",
-                      height: "28rem",
+                      width: "80%",
+                      height: "60rem",
                       borderRadius: "20px",
-                      objectFit: "fill",
+                      objectFit: "unset",
                     }}
-                  />
+/>
                   </Carousel.Item>
+                  
 
-                )
+
+
+
+)
               })}
             </Carousel> </center>
-             <br/>
-            
-
-             <br/>
-            
-
-             <br/>
-            
-
-
+          <br />
+          <br />
+          <br />
           <Row className="justify-content-between">
-            <Game favGamesArr={this.state.gameData} addGameHandler={this.addGameHandler} />
+            <Game favGamesArr={this.state.gameData} addGameHandler={this.addGameHandler}  handleClose={this.handleClose}  handleShow={this.handleShow} show={this.state.show}/>
           </Row>
-           <br/>
-            
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
 
-             <br/>
-             <br/>
-             <br/>
-             <br/>
-             <br/>
-             <br/>
-             <br/>
-             <br/>
-            
 
 
         </div>

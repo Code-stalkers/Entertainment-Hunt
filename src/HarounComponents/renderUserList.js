@@ -8,7 +8,7 @@ import axios from 'axios';
 import Profile2 from "../suhaibComponents/profile2";
 
 
-class Update extends React.Component {
+class Update2 extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,7 +22,7 @@ class Update extends React.Component {
         }
     }
 
-    fasopfdmjsdpo = () => {
+    movie = () => {
         let { user } = this.props.auth0;
         const email = user.email;
         console.log(email, 'hi')
@@ -51,7 +51,7 @@ class Update extends React.Component {
         return (
 
             <>
-                <button onClick={this.fasopfdmjsdpo}>fsddfasdf</button>
+           
 
 
              
@@ -70,4 +70,4 @@ class Update extends React.Component {
 
 }
 
-export default withAuth0(Update);
+export default withAuth0(Update2);

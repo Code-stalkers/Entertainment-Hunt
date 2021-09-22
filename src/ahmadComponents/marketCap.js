@@ -118,28 +118,30 @@ class MarketCap extends React.Component {
   render() {
     return (
       <>
+      <center>
       <div id='marketInfo'>
-        <h4>
+        <h3>
           Market cap in usd:{" "}
           <Badge bg="secondary">
             {this.state.marketCapData.market_cap_usd}$
           </Badge>
-        </h4>
-        <h4>
+        </h3>
+        <h3>
           {" "}
           Bitcoin dominance:{" "}
           <Badge bg="secondary">
             {this.state.marketCapData.bitcoin_dominance_percentage}%
           </Badge>
-        </h4>
-        <h4>
+        </h3>
+        <h3>
           {" "}
           cryptos:{" "}
           <Badge bg="secondary">
             {this.state.marketCapData.cryptocurrencies_number} coin
           </Badge>
-        </h4>
+        </h3>
         </div>
+        </center>
         <Search search={this.search} />
         <GetRecommendation
           getRecommendation={this.getRecommendation.bind(this)}

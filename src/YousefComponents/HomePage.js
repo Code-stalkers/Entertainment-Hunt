@@ -270,7 +270,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
                                 <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.15752-9/242483879_4266730030049209_1172719443005903381_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEIyscP--xb53rbG_pKPtKGDPvKwKWTnFkM-8rApZOcWSiI7yapI4zqOqNlDyhGPtrJTvChCKhNiRyDG7PaYPYh&_nc_ohc=ME73F4HFNigAX-noocf&_nc_ht=scontent.famm10-1.fna&oh=9389d5eb695e4d9c65c45717d2c1ff07&oe=61701898" width="100" class="rounded-circle" />
-                                    <h3 class="mt-2">Marwan Zakia</h3> <br/><span class="mt-1 clearfix">Java Architect</span> <small class="mt-4">I am an Java Architect working at google Inc at california,USA</small>
+                                    <h3 class="mt-2">Marwan Zakia</h3> <br/><span class="mt-1 clearfix">React.js dev</span> <small class="mt-4">I am a web developer who likes to learn stuff</small>
                                     <div class="social-buttons mt-5">  </div>
                                 </div>
                             </div>

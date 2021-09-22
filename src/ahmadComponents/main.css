@@ -6,15 +6,13 @@ body {
   font-family: "Roboto", sans-serif;
   
 }
-h4 {
-  font-size: 18px;
+h3 {
   margin-left: 60px;
 }
 
 #marketInfo {
   display: inline-flex;
   margin-top: 50px;
-  margin-left: 15%;
 }
 
 .bg-secondary {
@@ -36,13 +34,21 @@ h4 {
     margin-bottom: 50px;
 }
 #h2{
-    margin-left: 20px;
-    margin-bottom: 30px;
+  padding: 20px;
+    margin-left: 150px;
 }
 
 #table{
-    background-color: #212934;
-    color: #59ab6e ;
+    background-color: whitesmoke;
+    color:  #212934;
+    font-weight:400;
+}
+#tableDiv{
+  
+  padding: 20px !important;
+
+  margin-left:150px !important;
+  margin-right:150px !important;
 }
 #recommendation{
     margin-left: 42%;
@@ -50,6 +56,8 @@ h4 {
   background-color: #59ab6e;
   border-color: #59ab6e;
   margin-bottom: 80px;
+  width: 300px;
+  height: 50px;
 }
 #cards{
     display: grid;
@@ -57,12 +65,35 @@ h4 {
     border-radius: 10px;
     gap:10px;
     padding: 0!important;
+    margin-bottom: 50px;
+}
+.mt-4{
+  border-radius: 20px;
+  background: #EEEEEE;
+  box-shadow: 20px 20px 60px #CACACA, -20px -20px 60px #FFFFFF;
+  border: none
 }
 
 #submitButton{
- margin-left: 45%;
  width: 150px;
  margin-bottom: 30px;
+ margin-left: 40%;
+}
+.red{
+  color: red ;
+}
+.green{
+  color:rgb(25, 187, 25) ;
+}
+#userForm{
+  width:50%;
+  text-align: left;
+}
+.red7d{
+  color: red !important;
+}
+.green7d{
+  color:rgb(25, 187, 25) !important;
 }
 
 
