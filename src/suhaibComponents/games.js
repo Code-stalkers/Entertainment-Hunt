@@ -4,70 +4,77 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
-import { Notification } from 'rsuite';
+import Toast from 'react-bootstrap/Toast'
 class Game extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            show: false,
         }
     }
-    
-
-    // open = function () {
-    //     Notification.open({
-    //         title: 'added',
-    //         duration: 20000,
-    //         //   description: <Paragraph style={{ width: 320 }} rows={2} />
-    //     });
-    // }
+// Toast  main هي الاشعار لما تضيف من صهيب 
     render() {
         return (
             <>
 
 
-<Container >
-                <Row xs={1} md={3} className="g-4">
 
-                    {this.props.favGamesArr.map(item => {
+<Toast onClose={this.props.handleClose} show={this.props.show} delay={3000} autohide >
+                <Toast.Header>
+                  <img
+                    src="holder.js/20x20?text=%20"
+                    className="rounded me-2"
+                    alt=""
+                  />
+                  <strong className="me-auto">Added</strong>
+                 
+                </Toast.Header>
+                <Toast.Body>You can see it in favorite list in the Profile Page</Toast.Body>
+              </Toast>
+               <Container >
+                    <Row xs={1} md={3} className="g-4">
 
-                        return (
-                            <Col>
-                                <Container >
-                                    {['Dark ',].map((variant, idx) => (
-                                        <Card bg={variant.toLowerCase()}
-                                            key={idx}
-                                            text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                                            style={{ width: '18rem', height: '31rem' ,marginLeft :'31rem', margin:'70px'}}
-                                            className="mb-2" variant="top" border="danger" >
+                        {this.props.favGamesArr.map(item => {
 
-                                            <Card.Img style={{ width: '17.9rem', height: '19rem' }} variant="top" src={item.Poster} />
-                                            <Card.Body>
-                                                <Card.Title style={{ fontFamily: 'Cursive' }}>{item.Title}</Card.Title>
-                                                <Card.Text style={{ fontFamily: 'Cursive' }}>
-                                                    <span> {item.Year}   </span>
+                            return (
+                                <Col>
+                                    <Container >
+                                        {['Dark ',].map((variant, idx) => (
+                                            <Card bg={variant.toLowerCase()}
+                                                key={idx}
+                                                text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
+                                                style={{ width: '18rem', height: '35rem', marginLeft: '31rem', margin: '70px' }}
+                                                className="mb-2" variant="top" border="danger" >
 
-                                                    <span> {item.Type}   </span>
-                                                </Card.Text>
+                                               <center> <Card.Img style={{ width: '17.9rem', height: '23rem',  marginTop: '2px',borderRadius:'15px' }} variant="top" src={item.Poster} /></center>
+                                                <Card.Body>
+                                                    <Card.Title style={{ fontFamily: 'Cursive' }}>{item.Title}</Card.Title>
+                                                    <Card.Text style={{ fontFamily: 'Cursive' }}>
+                                                        <span> {item.Year}   </span>
 
-                                                <Button style={{
-                                                    position: 'absolute', left: '10px', bottom: '11px', marginLeft: '2rem',
-                                                    fontFamily: 'Impact, fantasy'}} onClick={() => this.props.addGameHandler(item)} size="lg" variant="success"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png' />  Add to favorite</Button>
-                                            </Card.Body>
+                                                        <span> {item.Type}   </span>
+                                                    </Card.Text>
 
-                                        </Card>))
+                                                    <Button style={{
+                                                        position: 'absolute', left: '10px', bottom: '11px', marginLeft: '2rem',
+                                                     
+                                                    }} onClick={() => this.props.addGameHandler(item)} size="lg" variant="success"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png' />  Add to favorite</Button>
+                                                </Card.Body>
 
-                                    }
-                                </Container>
-                            </Col>
+                                            </Card>))
+
+                                        }
+                                    </Container>
+                                </Col>
+                               
 
 
-                        );
+                            );
 
-                    })}
+                        })}
 
-                </Row>
-                </Container>
+                    </Row>
+                </Container> 
 
 
 

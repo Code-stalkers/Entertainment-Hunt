@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Gmaetoprofile from '../suhaibComponents/Gmaetoprofile';
 export class Profile extends Component {
     constructor(props) {
         super(props);
@@ -12,11 +13,16 @@ export class Profile extends Component {
             userName: this.props.auth0.user.name,
             userEmail: this.props.auth0.user.email,
             userPicture: this.props.auth0.user.picture}}
+
+
+
     render() {
         return (
+            <center>
 
             <Container>
-                     
+
+                     <Gmaetoprofile/>
                 <Row  className="g-4" style={{ margin: '2% 30%' ,width: '400px' }}>
                     {Array.from({ length: 1 }).map((_, idx) => (
                         <Col>
@@ -32,6 +38,7 @@ export class Profile extends Component {
                     ))}
                 </Row>
             </Container>
+            </center>
         )
     }
 }
