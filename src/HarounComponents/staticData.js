@@ -49,7 +49,7 @@ class Movies extends Component {
                     src={item.Poster}
                     alt="First slide"
                     style={{
-                      width: "48rem",
+                      width: "28rem",
                       height: "28rem",
                       borderRadius: "20px",
                       objectFit: "fill",
