@@ -9,6 +9,7 @@ import Profile2 from "./profile2";
 import { Drawer } from 'rsuite';
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import renderUserList from '../HarounComponents/renderUserList'
+
 class Update extends React.Component {
     constructor(props) {
         super(props)
@@ -39,7 +40,7 @@ class Update extends React.Component {
       show: true,
     });
   };
-
+// handelshow ناديتها لما بتعمل  fasopfdmjsdpo من فنكشن  
   movie = () => {
     let { user } = this.props.auth0;
     const email = user.email;

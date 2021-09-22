@@ -12,25 +12,7 @@ class Game extends Component {
             show: false,
         }
     }
-    
-  
-
-
-
- 
-         
-
- 
-      
-   
-
-    // open = function () {
-    //     Notification.open({
-    //         title: 'added',
-    //         duration: 20000,
-    //         //   description: <Paragraph style={{ width: 320 }} rows={2} />
-    //     });
-    // }
+// Toast  main هي الاشعار لما تضيف من صهيب 
     render() {
         return (
             <>
