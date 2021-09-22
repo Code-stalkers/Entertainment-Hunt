@@ -9,7 +9,7 @@ class Search extends React.Component {
             <Col xs={6}>
               <FloatingLabel
                 controlId="symbol"
-                label="Enter Coin:"
+                label="Enter Coin Symbol:"
                 className="mb-3"
               >
                 <Form.Control type="text" placeholder="BTC" />
