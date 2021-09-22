@@ -29,7 +29,7 @@ class Movies extends Component {
       Poster: "",
       Type: "",
       filmId:'',
-      // fanFavorite :[],
+      
 
       // comment:'',
     };
@@ -51,6 +51,9 @@ class Movies extends Component {
       });
      
   };
+
+ 
+
 
  
   
@@ -227,7 +230,7 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
                 </Form.Select>
               </Form.Group>
             </Row>
-            <Button variant="primary" type="submit">
+            <Button variant="success" type="submit" style={{float:'left' ,position:'absolute' ,right:'190px'}}>
               Search
             </Button>
           </Form>
@@ -246,6 +249,7 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
           moviesBackEndArray={this.state.moviesBackEndArray}
           showUpdateForm={this.showUpdateForm}
           addWatch={this.addWatch}
+          fanFavorite={this.state.fanFavorite}
           
         />
 
@@ -257,14 +261,14 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
 
 
 
-<br/>
+{/* <br/>
  <br/>
  <br/>
  <br/>
  <br/>
  <br/>
  <br/>
- <br/>
+ <br/> */}
 
         <UpdateForm
           show={this.state.show}

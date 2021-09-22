@@ -12,6 +12,7 @@ class Game extends Component {
 
         }
     }
+    
 
     // open = function () {
     //     Notification.open({
