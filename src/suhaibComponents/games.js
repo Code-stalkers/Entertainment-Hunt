@@ -37,8 +37,8 @@ class Game extends Component {
                                         <Card bg={variant.toLowerCase()}
                                             key={idx}
                                             text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
-                                            style={{ width: '18rem' }}
-                                            className="mb-2" variant="top" border="danger" style={{ width: '18rem', height: '31rem' ,marginLift :'10px' }}>
+                                            style={{ width: '18rem', height: '31rem' ,marginLeft :'31rem', margin:'70px'}}
+                                            className="mb-2" variant="top" border="danger" >
 
                                             <Card.Img style={{ width: '17.9rem', height: '19rem' }} variant="top" src={item.Poster} />
                                             <Card.Body>
@@ -50,8 +50,8 @@ class Game extends Component {
                                                 </Card.Text>
 
                                                 <Button style={{
-                                                    position: 'absolute', left: '0px', bottom: '0px', marginLeft: '2rem',
-                                                    fontFamily: 'Impact, fantasy'}} onClick={() => this.props.addGameHandler(item)} size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png' />  Add to favorite</Button>
+                                                    position: 'absolute', left: '10px', bottom: '11px', marginLeft: '2rem',
+                                                    fontFamily: 'Impact, fantasy'}} onClick={() => this.props.addGameHandler(item)} size="lg" variant="success"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png' />  Add to favorite</Button>
                                             </Card.Body>
 
                                         </Card>))

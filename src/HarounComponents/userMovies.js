@@ -79,7 +79,7 @@ class UserMovies extends Component {
 
     <Button  style={{position: 'absolute', left: '0px', bottom: '0px', marginLeft:'2rem',
   fontFamily: 'Impact, fantasy'
-  }} onClick={()=> this.props.userAddWatch(item)}   size="lg" variant="warning"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
+  }} onClick={()=> this.props.userAddWatch(item)}   size="lg" variant="success"> <img height='30px' src='https://img.icons8.com/color/2x/plus.png'/>  Add to Watchlist</Button>
   </Card.Body>
   
   </Card> ))
