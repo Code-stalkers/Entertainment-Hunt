@@ -87,6 +87,9 @@ import ModalInfo from './modal';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import logo from './logo.png';
 import Button from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar';
+
 
 export class Header extends Component {
 
@@ -139,38 +142,40 @@ export class Header extends Component {
                 </div>
             </nav> */}
 
-                <nav style={{ backgroundColor: "#212934" }} class="navbar navbar-expand-lg navbar-light shadow">
+                <Navbar style={{ backgroundColor: "#212934" }} class="navbar navbar-expand-lg navbar-light shadow">
                     <div class="container d-flex justify-content-between align-items-center">
 
                         <a class="navbar-brand text-success logo h1 align-self-center" href="#">
                             FUNTER
                         </a>
 
-                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        {/* <button class ="navbar-toggler border-0" type ="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class ="navbar-toggler-icon"></span>
+                    </button> */}
 
                         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                             <div class="flex-fill">
                                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/">HOME</a>
+                                        <Link class="nav-link" to="/">HOME</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/game">GAMES</a>
+                                        <Link class="nav-link" to="/game">GAMES</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="movie">MOVIES</a>
+                                        <Link class="nav-link" to="/movie">MOVIES</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/crypto">CRYPTO</a>
+                                        <Link class="nav-link" to="/crypto">CRYPTO</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/profile">PROFILE</a>
+                                        <Link class="nav-link" to="/profile">PROFILE</Link>
                                     </li>
-                                    <LoginButton />
+
+                                    {this.props.isAuthinticated ? <LogoutButton /> : <LoginButton />}
+                                    <LogoutButton />
                                 </ul>
-                                
+
                             </div>
                             <div class="navbar align-self-center d-flex">
                                 <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
@@ -196,7 +201,7 @@ export class Header extends Component {
                         </div>
 
                     </div>
-                </nav>
+                </Navbar>
 
                 <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
@@ -219,4 +224,4 @@ export class Header extends Component {
     }
 }
 
-export default Header
+export default Header;
