@@ -95,7 +95,20 @@ class UserMovies extends Component {
  
  </Row>
  </Container>
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+
       </div>
+
+
+
     );
   }
 }
