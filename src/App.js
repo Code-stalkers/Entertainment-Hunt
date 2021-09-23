@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Movies from './HarounComponents/Movies';
+// import  {Card,Button,Col,Row,Container} from 'react-bootstrap'
+import Footer from './YousefComponents/Footer'
+// import LoginButton from './YousefComponents/loginButton'
+import Suhaib from './suhaibComponents/suhaibMain'
+// import Navbar from './YousefComponents/NavBar';
+import Home from './YousefComponents/HomePage';
+import { withAuth0 } from '@auth0/auth0-react';
+import MarketCap from './ahmadComponents/marketCap';
+import Profile from './YousefComponents/profile';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Header from './YousefComponents/Header';
+
+
+class App extends Component {
+  render() {
+    return (
+
+      <div>
+
+      
+
+        {/* <Navbar/> */}
+        <Router>
+        <Header />
+          <Switch>
+
+
+            <Route exact path="/game">   <Suhaib />  </Route>
+            <Route exact path="/movie">  <Movies />  </Route>
+            <Route exact path="/">         <Home />  </Route>
+            <Route path="/crypto">   <MarketCap />  </Route>
+            <Route path="/Profile">   <Profile />   </Route>
+
+
+          </Switch>
+
+        </Router>
+        <Footer />
+
+      </div>
+    );
+  }
 }
 
-export default App;
+export default withAuth0(App);
