@@ -171,8 +171,7 @@ export class Header extends Component {
                                     <li class="nav-item">
                                         <Link class="nav-link" to="/profile">PROFILE</Link>
                                     </li>
-
-                                    {this.props.isAuthinticated ? <LogoutButton /> : <LoginButton />}
+                                {this.props.isAuthinticated ? <LogoutButton /> : <LoginButton />}
                                     <LogoutButton />
                                 </ul>
 
