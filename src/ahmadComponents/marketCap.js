@@ -23,8 +23,8 @@ class MarketCap extends React.Component {
     };
   }
   componentDidMount = () => {
-    const market_url = "http://localhost:3001/cryptoMarketCap";
-    const coins_url = "http://localhost:3001/cryptoCoins";
+    const market_url = "https://funter.herokuapp.com/cryptoMarketCap";
+    const coins_url = "https://funter.herokuapp.com/cryptoCoins";
 
     axios
       .get(market_url)
@@ -51,7 +51,7 @@ class MarketCap extends React.Component {
     console.log("1", coin);
 
     console.log(this.state.recommendation);
-    const url = `http://localhost:3001/cryptoRecommendation/${coin}`;
+    const url = `https://funter.herokuapp.com/cryptoRecommendation/${coin}`;
     axios
       .get(url)
       .then((result) => {
@@ -67,7 +67,7 @@ class MarketCap extends React.Component {
   search = (event) => {
     event.preventDefault();
     const symbol = event.target.symbol.value;
-    const url = `http://localhost:3001/cryptoSearch?symbol=${symbol}`;
+    const url = `https://funter.herokuapp.com/cryptoSearch?symbol=${symbol}`;
     axios
       .get(url)
       .then((result) => {
@@ -86,7 +86,7 @@ class MarketCap extends React.Component {
       description: event.target.description.value,
     };
     axios
-      .post(`http://localhost:3001/addRecommendation`, obj)
+      .post(`https://funter.herokuapp.com/addRecommendation`, obj)
       .then((result) =>{
         this.setState({
           usersRecommendation: result.data,

@@ -18,7 +18,7 @@ class Movies extends Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/static`) 
+      .get(`https://funter.herokuapp.com/static`) 
       .then((result) => {
         this.setState({
           fanFavorite: result.data,

@@ -38,7 +38,7 @@ class Movies extends Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:3001/static`) 
+      .get(`https://funter.herokuapp.com/static`) 
       .then((result) => {
         this.setState({
           moviesBackEndArray: result.data,
@@ -67,7 +67,7 @@ class Movies extends Component {
 
     await axios
       .get(
-        `http://localhost:3001/movie?title=${title}&year=${year}&type=${type}`
+        `https://funter.herokuapp.com/movie?title=${title}&year=${year}&type=${type}`
       )
       .then((result) => {
         this.setState({
@@ -115,7 +115,7 @@ class Movies extends Component {
 
     // console.log(obj.Title);
     
-const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objEst})
+const save = await axios.get(`https://funter.herokuapp.com/addToWatchlist`,{params:objEst})
 // console.log(save);
 
 
@@ -139,7 +139,7 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
     console.log('rami',userObjEst);
     
  axios
-.post(`http://localhost:3001/userAddingList`,{userObjEst})
+.post(`https://funter.herokuapp.com/userAddingList`,{userObjEst})
 .then((results) => {
   console.log('important',results.data);
 })
@@ -169,7 +169,7 @@ const save = await axios.get(`http://localhost:3001/addToWatchlist`,{params:objE
       
       
     };
-    axios.put(`http://localhost:3001/updateComment/${this.state.filmId}`,obj)
+    axios.put(`https://funter.herokuapp.com/updateComment/${this.state.filmId}`,obj)
     .then(result =>{
       this.setState({
 
