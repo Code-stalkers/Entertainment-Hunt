@@ -41,7 +41,7 @@ class Suhaib extends Component {
     });
   };
   componentDidMount = async () => {
-    const url = `http://localhost:3001/game?title=call`;
+    const url = `https://funter.herokuapp.com/game?title=call`;
     axios
       .get(url)
       .then(result => {
@@ -62,7 +62,7 @@ class Suhaib extends Component {
     event.preventDefault()
     let title = event.target.movieTitle.value;
    
-    const url = `http://localhost:3001/game?title=${title}`;
+    const url = `https://funter.herokuapp.com/game?title=${title}`;
     axios
       .get(url)
       .then(result => {
@@ -109,7 +109,7 @@ class Suhaib extends Component {
       comment: item.comment,
       email: email
     }
-    const save = await axios.post(`http://localhost:3001/addfavgame`, objEst)
+    const save = await axios.post(`https://funter.herokuapp.com/addfavgame`, objEst)
     this.setState({
 
       favGamesArr: save.data

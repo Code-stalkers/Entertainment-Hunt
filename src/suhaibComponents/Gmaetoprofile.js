@@ -46,7 +46,7 @@ class Update extends React.Component {
     const email = user.email;
     console.log(email, 'hi')
     axios
-        .get(`http://localhost:3001/userAddingList?email=${email}`)
+        .get(`https://funter.herokuapp.com/userAddingList?email=${email}`)
         .then(result => {
           
             this.setState({
@@ -65,7 +65,7 @@ class Update extends React.Component {
         const email = user.email;
         console.log(email, 'hi')
         axios
-            .get(`http://localhost:3001/addgame?email=${email}`)
+            .get(`https://funter.herokuapp.com/addgame?email=${email}`)
             .then(result => {
               
                 this.setState({
