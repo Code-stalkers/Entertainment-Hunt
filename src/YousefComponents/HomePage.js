@@ -233,7 +233,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5 mb-5">
-                                <div class="text-center"> <img src="https://scontent.famm11-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExOz4MTqiLkN28ab8pDFz1cU6oxlR_mQdxTqjGVH-ZB18m1Xm7ZbGMCasloX-HoA_HCuf_Xu4ccbFh9jq58SU4&_nc_ohc=gSBcvc5oIkcAX9lGqEh&_nc_ht=scontent.famm11-1.fna&oh=0e29bec682a314e9a27d957c3267224c&oe=616DC538" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/149175500_5328126460538769_623588383074290637_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHiWd1pdHCKuI5bAkl6zkn0cU6oxlR_mQdxTqjGVH-ZB7PwXliB9kdOkIF02SBR_bFZMJ0ZJq3lxv42-_TUyRI8&_nc_ohc=PKT1i7tXXvcAX_M5rlz&_nc_ht=scontent.famm10-1.fna&oh=00_AT-_0TNfheX3FjaHCNy69jRL3rExFrp9s9N3j4h-4PIvMw&oe=6227A8B8" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Ahmad Bani-Salameh</h3> <br/> <span class="mt-1 clearfix">Web Developer</span> <small class="mt-4">I am an android developer working at google Inc at Amman, JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
@@ -241,7 +241,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                         </div>
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
-                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/208348390_321996862904824_8845605057565977723_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEIIZ8OItfhKPkxucV6XLhraGsbDhLa-5doaxsOEtr7lz2iRHD74D-RSkFxwnAyqMwD0dM9U9zoEi1za18tjPvf&_nc_ohc=g9A-fXSKCA8AX88LqaY&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=259259374a42245f19113eef9990788e&oe=616F64E6" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFt7BmjqLtWXw/profile-displayphoto-shrink_800_800/0/1640373647448?e=1649894400&v=beta&t=FvaYSm6xEhvGbgZ17bYGB_RmeNMR5aLV0WpVTjedZfg" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Yousef Obeidat</h3> <br/><span class="mt-1 clearfix">Web-Developer</span> <small class="mt-4">I am a trainee as a Web Developer at LTUC Inc at Amman,JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
@@ -249,7 +249,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                         </div>
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
-                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/170748298_10221712234167649_2359846898020945130_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFJ7S-dgj7tymrZLy-KN-c-L6NYbYJNHGovo1htgk0casaDLxKkCE1lU3jLjevfRLi-Rh6OCYgQG_pCNCnzHViI&_nc_ohc=fiqnnmICgsoAX_65WTv&tn=PUk4iEV7rP1yuec7&_nc_ht=scontent.famm10-1.fna&oh=d9601583a66eb19be751825959c76797&oe=616E9BFD" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/75327079_10217495196024331_3906441668185817088_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_eui2=AeF6B5WlZMMTSQro23flg90Qn_HCr6op_gWf8cKvqin-BVPlx6OHBID5uNb-zi-lV-74vbjMku4WReUz4ON9xcvk&_nc_ohc=HAfw_Zv3UY0AX-j1v4M&_nc_ht=scontent.famm10-1.fna&oh=00_AT9ZrPw_vEft_YqJMAggoZVtm7oxVBjcEmcCdniIb-9CiA&oe=6226DA15" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Suhib Okour</h3> <br/><span class="mt-1 clearfix">Java Architect</span> <small class="mt-4">I am an JavaScipt developer working at LTUC Inc at Amman, JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
@@ -261,7 +261,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
 
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
-                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/81028245_2719789814726188_2044218924668551168_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGa0JjkTMJovj04ZapQPv8PH07PjXLbn7cfTs-Nctuft7whP1D6oJT5cBQ-M6BY3ObGjWrbWf4FaSCsaihp_Z1m&_nc_ohc=sID6Wot7CEUAX89hm4J&_nc_ht=scontent.famm10-1.fna&oh=f1fb19761883ae2801659ef81d3f2f86&oe=6170D23D" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.6435-9/79700128_2574111346006339_5159266203746697216_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGlSz5aiwO4F0PQ-R_M0V5k2YCaM4eyS2DZgJozh7JLYHjFw_o_jqIYJmKqCt4rtoLgzlzDQPRPEfu6s_kDpm-w&_nc_ohc=cZyKP7CTFjMAX_xuheg&_nc_ht=scontent.famm10-1.fna&oh=00_AT_AitYm7dlQ_JERfqr0jzmTVwx9txQAu1LFHM6v0pOHdQ&oe=6226E1EF" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Mohammad Haroun</h3> <br/><span class="mt-1 clearfix">Java Architect</span> <small class="mt-4">I am an Java Architect working at google Inc at Amman, JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
@@ -269,7 +269,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                         </div>
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
-                                <div class="text-center"> <img src="https://scontent.famm10-1.fna.fbcdn.net/v/t1.15752-9/242483879_4266730030049209_1172719443005903381_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeEIyscP--xb53rbG_pKPtKGDPvKwKWTnFkM-8rApZOcWSiI7yapI4zqOqNlDyhGPtrJTvChCKhNiRyDG7PaYPYh&_nc_ohc=ME73F4HFNigAX-noocf&_nc_ht=scontent.famm10-1.fna&oh=9389d5eb695e4d9c65c45717d2c1ff07&oe=61701898" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE4_WPwY9TFjw/profile-displayphoto-shrink_800_800/0/1641583015868?e=1649894400&v=beta&t=BD0-BMXr9EV1DxTM_CfMILwDm6bkt9SxlG5OSUZdcoI" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Marwan Zakia</h3> <br/><span class="mt-1 clearfix">Java Architect</span> <small class="mt-4">I am a web developer working at FUNTER Inc at Amman, JOR</small>
                                     <div class="social-buttons mt-5">  </div>
                                 </div>
