@@ -267,9 +267,9 @@ body, ul, li, p, a, label, input, div {
         }
         .card1 {
           border-radius: 20px;
-          background: #eeeeee;
-          box-shadow: 20px 20px 60px #c4bbbb, -20px -20px 60px #a8a3a3;
-          border: none
+          background: #eee;
+          box-shadow: 20px 20px 60px #c4bbbb, -20px -20px 60px #c7c2c242;
+          border: none;
       }
        
     
