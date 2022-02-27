@@ -241,7 +241,7 @@ Cryptocurrencies are digital assets people use as investments and for online pur
                         </div>
                         <div class="col-md-4">
                             <div class="card1 p-3 py-4 mt-5">
-                                <div class="text-center"> <img src="https://scontent.famm7-1.fna.fbcdn.net/v/t39.30808-6/274291056_473896154381560_7849998367261354536_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeH302MJdKKgYlCdoTUYz2klW36uC8vGSKZbfq4Ly8ZIppAA8GEa2yHotYFui2d2JR3z4LXyS68Od5ogGXa_DRps&_nc_ohc=IfC0mVf4qcgAX_e97XI&_nc_ht=scontent.famm7-1.fna&oh=00_AT86Zgu8Xa5fGgB12_Qa7D2yy95YEYY1SzuCOUQx8537kQ&oe=6219CFD1" width="100" class="rounded-circle" />
+                                <div class="text-center"> <img src="https://media-exp1.licdn.com/dms/image/C5603AQH5bWeOF5qGdw/profile-displayphoto-shrink_800_800/0/1645220756808?e=1651708800&v=beta&t=VYJc5P2jBLLQZa4q1KmuLwecUlWH2dA-AKVEEorbyOU" width="100" class="rounded-circle" />
                                     <h3 class="mt-2">Yousef Obeidat</h3> <br/><span class="mt-1 clearfix">Web-Developer</span> <small >I am a trainee as a Web Developer at LTUC Inc at Amman,JOR</small>
                                     <div class="social-buttons mt-5"> </div>
                                 </div>
